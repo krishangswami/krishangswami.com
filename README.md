@@ -1,2 +1,0 @@
-# krishangswami.com
-Personal Website
