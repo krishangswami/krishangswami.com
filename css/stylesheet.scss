@@ -156,6 +156,7 @@ p3 {
         #content {
             position: relative;
             font-size: 1rem; //
+            margin: 0 0 150px;
             left: 15%; //
             width: calc(70%); //
         }
@@ -164,17 +165,11 @@ p3 {
 @media (max-width: 500px) {
     #container {
         .name {
-            position: relative; //
-            left: 15%; //
             top: 12vw;
-            font-size: 1.1rem;
         }
 
         #content {
             top: 100px;
-            font-size: 1rem; //
-            left: 15%; //
-            width: calc(70%); //
 
             .image-one {
                 height: 300px;
