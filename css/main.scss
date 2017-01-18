@@ -124,6 +124,7 @@ a {
 @media (max-width: 800px) {
     #container {
         #menu {
+            overflow: scroll;
             position: absolute;
             font-size: 1rem;
 
@@ -195,8 +196,6 @@ a {
 @media (max-width: 350px) {
     #container {
         #menu {
-            overflow: scroll;
-
             .section-one {
                 .name {
                     top: 12vw;
@@ -208,11 +207,11 @@ a {
             }
 
             .divider {
-                top: 110px;
+                top: 130px;
             }
 
             .section-two {
-                top: 60px;
+                top: 80px;
             }
         }
     }
