@@ -125,7 +125,7 @@ a {
     #container {
         #menu {
             overflow: scroll;
-            position: absolute;
+            position: relative;
             font-size: 1rem;
 
             .section-one {
@@ -148,6 +148,7 @@ a {
                 height: 2px;
                 width: calc(70%);
                 margin-left: 15%;
+                top: 160px;
                 // background-color: #fff;
             }
 
@@ -207,11 +208,11 @@ a {
             }
 
             .divider {
-                top: 150px;
+                top: 120px;
             }
 
             .section-two {
-                top: 100px;
+                top: 80px;
             }
         }
     }
