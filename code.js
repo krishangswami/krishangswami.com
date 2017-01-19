@@ -1,10 +1,29 @@
 $(document).ready(function() {
-    $.fn.preload = function() {
-        this.each(function() {
-            $('<img/>')[0].src = this;
-        });
+    var images = new Array()
+
+    function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+        }
     }
-    $(['files/images']).preload();
+    preload(
+        '../files/images/breakfast/final1.jpg',
+        '../files/images/breakfast/sketches.jpg',
+        '../files/images/bubble/final1.jpg',
+        '../files/images/nexus/temp.jpg',
+        '../files/images/robin/final1.jpg',
+        '../files/images/robin/final2.jpg',
+        '../files/images/robin/final3.jpg',
+        '../files/images/takeout/final1.jpg',
+        '../files/images/takeout/final2.jpg',
+        '../files/images/takeout/final3.jpg',
+        '../files/images/takeout/final4.jpg',
+        '../files/images/takeout/final5.jpg',
+        '../files/images/takeout/process.jpg',
+        '../files/images/takeout/sketches.jpg',
+        '../files/images/underscore/final1.jpg'
+    )
 
     if ($(window).width() > 800) {
         $('.white').hover(function() {
