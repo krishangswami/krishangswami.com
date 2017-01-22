@@ -15,6 +15,7 @@ $(document).ready(function() {
         '../files/images/robin/final1.jpg',
         '../files/images/robin/final2.jpg',
         '../files/images/robin/final3.jpg',
+        '../files/images/robin/sketches.jpg',
         '../files/images/takeout/final1.jpg',
         '../files/images/takeout/final2.jpg',
         '../files/images/takeout/final3.jpg',
@@ -22,7 +23,9 @@ $(document).ready(function() {
         '../files/images/takeout/final5.jpg',
         '../files/images/takeout/process.jpg',
         '../files/images/takeout/sketches.jpg',
-        '../files/images/underscore/final1.jpg'
+        '../files/images/underscore/final1.jpg',
+        '../files/images/ks.jpg',
+        '../files/images/ks2.jpg'
     )
 
     if ($(window).width() > 800) {
