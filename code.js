@@ -24,9 +24,26 @@ $(document).ready(function() {
         '../files/images/takeout/process.jpg',
         '../files/images/takeout/sketches.jpg',
         '../files/images/underscore/final1.jpg',
+        '../files/images/underscore/topics_ani.jpg',
+        '../files/images/underscore/header_ani.jpg',
+        '../files/images/underscore/search_ani.jpg',
+        '../files/images/underscore/topics_ani.gif',
+        '../files/images/underscore/header_ani.gif',
+        '../files/images/underscore/search_ani.gif',
         '../files/images/ks.jpg',
         '../files/images/ks2.jpg'
     )
+
+    $(".gif").hover(function() {
+        $(this).attr("src", function(index, attr) {
+            return attr.replace(".jpg", ".gif");
+        });
+    }, function() {
+        $(this).attr("src", function(index, attr) {
+            return attr.replace(".gif", ".jpg");
+        });
+    });
+
 
     if ($(window).width() > 800) {
         $('.white').hover(function() {
