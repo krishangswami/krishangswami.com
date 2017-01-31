@@ -7,6 +7,11 @@ body {
     color: #FFEB3B;
 }
 
+.color-black {
+    font-size: 1.1rem;
+    color: #000000;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -121,12 +126,27 @@ p3 {
 
         .image-list {
             img {
-                max-width: 100%;
+                width: 100%;
                 margin: 0 0 20px;
             }
 
             #last {
                 margin-bottom: 0;
+            }
+
+            .coll_title {
+                margin-bottom: 10px;
+                font-weight: 900;
+                // font-style: italic;
+            }
+
+            .photos {
+                columns: 3;
+                column-gap: 10px;
+
+                img {
+                    margin-bottom: 10px;
+                }
             }
         }
 
@@ -171,12 +191,15 @@ p3 {
         #content {
             position: relative;
             font-size: 1rem;
-            /**/
             margin: 0 0 200px;
             left: 15%;
-            /**/
             width: calc(70%);
-            /**/
+
+            .image-list {
+                .photos {
+                    columns: 2;
+                }
+            }
         }
     }
 }
