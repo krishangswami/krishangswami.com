@@ -5,14 +5,19 @@ body {
 a {
     text-decoration: none;
     color: #000;
+    transition: 0.5s ease-in-out;
 }
 
 .color-yellow {
     color: #FFEB3B;
 }
 
-.white:hover {
-    background-color: #fff;
+.color-white {
+    color: #FFF;
+}
+
+.active {
+    background-color: #F3F3F3;
 }
 
 .link {
@@ -29,24 +34,25 @@ a {
 
         .section-one {
             position: absolute;
-            width: 330px;
+            width: 30vw;
             height: 100%;
 
             .name {
                 position: relative;
-                display: inline;
-                left: 100px;
-                top: 100px;
+                z-index: 0;
+                display: inline-block;
+                left: calc(15vw - 75px);
+                top: 25vh;
                 font-size: 1.2rem;
                 font-weight: 700;
             }
 
             .name::after {
                 position: absolute;
+                z-index: -1;
                 top: 50%;
                 left: -5%;
                 content: '';
-                z-index: -1;
                 height: 60%;
                 width: 110%;
                 background-color: #FFEB3B;
@@ -54,46 +60,61 @@ a {
 
             .extra {
                 position: relative;
-                left: 100px;
-                top: 150px;
+                left: calc(15vw - 75px);
+                top: 30vh;
                 width: 130px;
 
                 a:hover {
-                    background-color: #F3F3F3;
+                    background-color: #FFF7B1;
                 }
             }
-        }
-
-        .divider {
-            position: absolute;
-            top: 100px;
-            width: 2px;
-            height: calc(100% - 200px);
-            background-color: #F3F3F3;
-            margin-left: 330px;
-            z-index: 12;
         }
 
         .section-two {
             position: absolute;
-            left: 330px;
-            top: 100px;
-            width: calc(100% - 430px);
-            height: calc(100% - 200px);
-            background-image: url("../files/images/white.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center top;
+            left: 30vw;
+            width: 20vw;
+            height: 100vh;
+            background-color: #FFEB3B;
+
+            .name {
+                position: relative;
+                z-index: 0;
+                display: inline-block;
+                left: calc(10vw - 75px);
+                top: 25vh;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
 
             .projects {
-                margin-top: 70px;
-                margin-left: 100px;
-                width: 300px;
+                position: relative;
+                top: 30vh;
+                left: calc(10vw - 75px);
+                width: 150px;
 
                 p2 {
                     font-weight: 300;
                 }
+
+                li {
+                    top: 30vh;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center top;
+                }
             }
+        }
+
+        .section-three {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            left: 50vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            transition: 0.5s ease-in-out;
         }
 
         .takeout-hov {
@@ -124,95 +145,49 @@ a {
 @media (max-width: 800px) {
     #container {
         #menu {
-            overflow: scroll;
+            overflow: auto;
             position: relative;
             font-size: 1rem;
 
             .section-one {
                 position: relative;
-                width: 100%;
-                height: 30%;
+                width: 100vw;
+                height: 40vh;
+                min-height: 250px;
 
                 .name {
-                    left: 15%;
-                    font-size: 1.1rem;
+                    left: calc(10vw);
+                    top: 5vh;
+                    font-size: 1rem;
                 }
 
                 .extra {
-                    left: 15%;
+                    left: calc(10vw);
+                    top: 10vh;
                 }
-            }
-
-            .divider {
-                position: relative;
-                height: 2px;
-                width: calc(70%);
-                margin-left: 15%;
-                top: 160px;
-                // background-color: #fff;
             }
 
             .section-two {
                 position: relative;
                 left: 0;
-                width: 100%;
-                height: 50%;
+                width: 100vw;
+                height: 60vh;
+                min-height: 300px;
+
+                .name {
+                    left: calc(10vw);
+                    top: 5vh;
+                    font-size: 1rem;
+                }
 
                 .projects {
-                    position: relative;
-                    left: 15%;
-                    margin-left: 0;
-
-                    ul {
-                        margin-bottom: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 500px) {
-    #container {
-        #menu {
-            .section-one {
-                .name {
-                    top: 12vw;
-                }
-
-                .extra {
-                    top: 70px;
+                    left: calc(10vw);
+                    top: 10vh;
                 }
             }
 
-            .divider {
-                top: 75px;
-            }
-
-            .section-two {
-                top: 20px;
-            }
-        }
-    }
-}
-@media (max-width: 350px) {
-    #container {
-        #menu {
-            .section-one {
-                .name {
-                    top: 12vw;
-                }
-
-                .extra {
-                    top: 80px;
-                }
-            }
-
-            .divider {
-                top: 120px;
-            }
-
-            .section-two {
-                top: 80px;
+            .section-three {
+                display: none;
             }
         }
     }
