@@ -66,9 +66,9 @@ $(document).ready(function() {
     // });
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() < 400) {
+        if ($(window).scrollTop() < 200) {
             $('#scroll').fadeOut();
-        } else if ($(window).scrollTop() > 400) {
+        } else if ($(window).scrollTop() > 200) {
             $('#scroll').fadeIn();
         }
     });
