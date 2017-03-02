@@ -5,7 +5,7 @@ body {
 a {
     text-decoration: none;
     color: #000;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .color-yellow {
@@ -17,7 +17,8 @@ a {
 }
 
 .active {
-    background-color: #F3F3F3;
+    // background-color: #F3F3F3;
+    background-color: #FFF7B1;
 }
 
 .link {
@@ -65,7 +66,8 @@ a {
                 width: 130px;
 
                 a:hover {
-                    background-color: #FFF7B1;
+                    // background-color: #FFF7B1;
+                    background-color: #F3F3F3;
                 }
             }
         }
@@ -75,8 +77,10 @@ a {
             left: 30vw;
             width: 20vw;
             height: 100vh;
-            background-color: #FFEB3B;
-
+            // background-color: #FFEB3B;
+            background-color: #F3F3F3;
+            // background-color: #FAFAFA;
+            // border-left: 1px solid #F3F3F3;
             .name {
                 position: relative;
                 z-index: 0;
@@ -122,6 +126,7 @@ a {
         }
 
         .underscore-hov {
+            // background-position: center left;
             background-image: url("../files/images/underscore/final1.jpg");
         }
 
@@ -134,11 +139,16 @@ a {
         }
 
         .breakfast-hov {
+            // background-position: center left;
             background-image: url("../files/images/breakfast/final1.jpg");
         }
 
         .robin-hov {
             background-image: url("../files/images/robin/final1.jpg");
+        }
+
+        .data-hov {
+            background-image: url("../files/images/data/final1.jpg");
         }
     }
 }
