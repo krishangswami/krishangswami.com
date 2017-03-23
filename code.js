@@ -11,30 +11,62 @@ $(document).ready(function() {
     });
 
 
-    if ($(window).width() > 800) {
-        $('.white').hover(function() {
+    // if ($(window).width() > 800) {
+    //     $('.white').hover(function() {
+    //
+    //         var seCheck = $('.section-three').attr('class').split(' ')[1];
+    //
+    //         $(".section-three").removeClass(seCheck);
+    //         $('.white').removeClass('active');
+    //
+    //
+    //         $(".section-three").addClass(this.id + '-hov');
+    //
+    //
+    //         if (!$(this).hasClass('active')) {
+    //             $(this).addClass('active');
+    //             // $(this).append('→');
+    //         }
+    //     });
+    //
+    // }
 
+    if ($(window).width() > 800) {
+
+        $('.white').hover(function() {
+            var check = $('.color').attr('class').split(' ')[1];
+
+            $(".color").removeClass(check);
+            $('.color').addClass(this.id);
+
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active');
+            }
+        },
+        function() {
+            var check = $('.color').attr('class').split(' ')[1];
+            $( ".color" ).removeClass(check);
+        });
+
+        $('.corners').hover(function() {
             var seCheck = $('.section-three').attr('class').split(' ')[1];
 
             $(".section-three").removeClass(seCheck);
             $('.white').removeClass('active');
-
-
             $(".section-three").addClass(this.id + '-hov');
 
             if (!$(this).hasClass('active')) {
                 $(this).addClass('active');
             }
         });
-
     }
 
-    if ($(window).width() <= 800) {
-        var seCheck = $('.section-three').attr('class').split(' ')[1];
-
-        $('#underscore').removeClass('active');
-        $(".section-three").removeClass(seCheck);
-    }
+    // if ($(window).width() <= 800) {
+    //     var seCheck = $('.color').attr('class').split(' ')[1];
+    //
+    //     $('#underscore').removeClass('active');
+    //     $(".section-three").removeClass(seCheck);
+    // }
 
     $(window).on("resize", function() {
         if ($(window).width() > 800) {
@@ -66,9 +98,9 @@ $(document).ready(function() {
     // });
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() < 200) {
+        if ($(window).scrollTop() < 400) {
             $('#scroll').fadeOut();
-        } else if ($(window).scrollTop() > 200) {
+        } else if ($(window).scrollTop() > 400) {
             $('#scroll').fadeIn();
         }
     });
