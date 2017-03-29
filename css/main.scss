@@ -19,8 +19,9 @@ body {
 
     font-size: 1rem;
     font-weight: 700;
-    /* background-color: #FFEB3B;*/
-    border: 1px solid #CCCCCC;
+    background-color: #FFEB3B;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .corners {
@@ -45,7 +46,7 @@ body {
         content: "";
         position: absolute;
         z-index: -1;
-        width: 0%;
+        width: 120%;
         height: 35%;
         top: 65%;
         left: -10%;
@@ -53,19 +54,18 @@ body {
         /* background-color: #CCCCCC;*/
         visibility: hidden;
         /* -webkit-transform: rotate(-2deg);*/
-        /* transform: rotate(-2deg);*/
-        /* -webkit-transform: scaleX(0);*/
-        /* transform: scaleX(0);*/
+        /* transform: rotate(-5deg);*/
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
-
     }
 
     a:hover:before {
-        width: 120%;
+        /* width: 100%;*/
         visibility: visible;
-        /* -webkit-transform: scaleX(4);*/
-        /* transform: scaleX(1);*/
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
     }
 }
 
@@ -116,7 +116,13 @@ body {
 
     .playfare {
         /* background-color: #FFDFD9;*/
-        background-color: #FF9F8C;
+        // background-color: #FF9F8C;
+        background-color: #F8E5E2;
+    }
+
+    .nexus {
+        /* background-color: #E6C4AC;*/
+        background-color: #6A9C61;
     }
 
     .underscore {
@@ -163,7 +169,8 @@ body {
                 .num {
                     color: #CCCCCC;
                     margin-right: 5px;
-                    font-size: .8rem;
+                    font-size: 1rem;
+                    font-weight: bold;
                     text-decoration: none;
 
                     -webkit-transition: all 0.3s ease-in-out 0s;
@@ -173,9 +180,10 @@ body {
 
             a:hover {
                 color: #333333;
-
+                // color: #fff;
                 .num {
                     color: #333333;
+                    // color: #fff;
                 }
             }
 
@@ -184,10 +192,11 @@ body {
                 position: absolute;
                 z-index: -1;
                 width: 120%;
-                height: 35%;
-                top: 65%;
+                height: 30%;
+                top: 82%;
                 left: -10%;
                 background-color: #FFEB3B;
+                // background-color: #000;
                 /* background-color: #CCCCCC;*/
                 visibility: hidden;
                 /* -webkit-transform: rotate(-2deg);*/

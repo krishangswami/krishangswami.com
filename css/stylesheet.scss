@@ -99,27 +99,26 @@ p2 {
             content: "";
             position: absolute;
             z-index: -1;
-            width: 0%;
+            width: 120%;
             height: 35%;
             top: 65%;
             left: -10%;
             background-color: #FFEB3B;
-            // background-color: #CCCCCC;
+            /* background-color: #CCCCCC;*/
             visibility: hidden;
-            // -webkit-transform: rotate(-2deg);
-            // transform: rotate(-2deg);
-            // -webkit-transform: scaleX(0);
-            // transform: scaleX(0);
+            /* -webkit-transform: rotate(-2deg);*/
+            /* transform: rotate(-5deg);*/
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
             -webkit-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s;
-
         }
 
         a:hover:before {
-            width: 120%;
+            /* width: 100%;*/
             visibility: visible;
-            // -webkit-transform: scaleX(4);
-            // transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
         }
     }
 
@@ -146,7 +145,8 @@ p2 {
             .num {
                 color: #333333;
                 margin-right: 5px;
-                font-size: .8rem;
+                font-size: 1rem;
+                font-weight: bold;
 
                 -webkit-transition: all 0.3s ease-in-out 0s;
                 transition: all 0.3s ease-in-out 0s;
@@ -252,7 +252,8 @@ p2 {
         h {
             // font-size: 1.1rem;
             line-height: 40px;
-            font-weight: 700;
+            font-weight: bold;
+            text-transform: lowercase;
             // margin-bottom: 20px;
         }
 

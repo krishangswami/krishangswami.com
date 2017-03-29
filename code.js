@@ -10,27 +10,6 @@ $(document).ready(function() {
         });
     });
 
-
-    // if ($(window).width() > 800) {
-    //     $('.white').hover(function() {
-    //
-    //         var seCheck = $('.section-three').attr('class').split(' ')[1];
-    //
-    //         $(".section-three").removeClass(seCheck);
-    //         $('.white').removeClass('active');
-    //
-    //
-    //         $(".section-three").addClass(this.id + '-hov');
-    //
-    //
-    //         if (!$(this).hasClass('active')) {
-    //             $(this).addClass('active');
-    //             // $(this).append('→');
-    //         }
-    //     });
-    //
-    // }
-
     if ($(window).width() > 800) {
 
         $('.white').hover(function() {
@@ -38,6 +17,7 @@ $(document).ready(function() {
 
             $(".color").removeClass(check);
             $('.color').addClass(this.id);
+            $("#name").css('background-color', 'transparent');
 
             if (!$(this).hasClass('active')) {
                 $(this).addClass('active');
@@ -46,6 +26,8 @@ $(document).ready(function() {
         function() {
             var check = $('.color').attr('class').split(' ')[1];
             $( ".color" ).removeClass(check);
+            $("#name").removeClass('namer');
+            $("#name").css('background-color', '#FFEB3B');
         });
 
         $('.corners').hover(function() {
@@ -61,13 +43,6 @@ $(document).ready(function() {
         });
     }
 
-    // if ($(window).width() <= 800) {
-    //     var seCheck = $('.color').attr('class').split(' ')[1];
-    //
-    //     $('#underscore').removeClass('active');
-    //     $(".section-three").removeClass(seCheck);
-    // }
-
     $(window).on("resize", function() {
         if ($(window).width() > 800) {
             $(".change-src").attr("src", "../files/images/ks.jpg");
@@ -75,27 +50,6 @@ $(document).ready(function() {
             $(".change-src").attr("src", "../files/images/ks2.jpg");
         }
     });
-
-    // var lastScroll = $(window).scrollTop();
-    // var up = false;
-    // var currScroll;
-    // $(window).scroll(function() {
-    //     currScroll = $(window).scrollTop();
-    //     if (currScroll > lastScroll && !up) {
-    //         $('#scroll').stop().fadeOut();
-    //         up = !up;
-    //     } else if (currScroll < lastScroll && up) {
-    //         $('#scroll').stop().fadeIn();
-    //         up = !up;
-    //     }
-    //     lastScroll = currScroll;
-    //     if ($(window).scrollTop() < 400) {
-    //         $('#scroll').fadeOut();
-    //     }
-    //     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
-    //         $('#scroll').fadeIn();
-    //     }
-    // });
 
     $(window).scroll(function() {
         if ($(window).scrollTop() < 400) {
