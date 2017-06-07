@@ -247,6 +247,15 @@ p2 {
             margin: 0 0 100px;
             line-height: 2rem;
             font-weight: 300;
+
+            ul {
+              width: 90%;
+              margin-left: 30px;
+              li {
+                list-style-type: square;
+                margin-bottom: 10px;
+              }
+            }
         }
 
         h {
@@ -277,6 +286,19 @@ p2 {
                 img {
                     margin-bottom: 10px;
                 }
+            }
+
+            p {
+              margin: 0 0 100px;
+              font-weight: 300;
+              font-size: 0.9rem;
+            }
+
+            iframe {
+              #social {
+                display: none;
+              }
+
             }
         }
 
