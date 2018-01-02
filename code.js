@@ -27,7 +27,8 @@ $(document).ready(function() {
             var check = $('.color').attr('class').split(' ')[1];
             $( ".color" ).removeClass(check);
             $("#name").removeClass('namer');
-            $("#name").css('background-color', '#FFEB3B');
+            // $("#name").css('background-color', '#FFEB3B');
+            $("#name").css('background-color', '#B3F2FF');
         });
 
         $('.corners').hover(function() {
