@@ -19,7 +19,8 @@ body {
 
     font-size: 1rem;
     font-weight: 700;
-    background-color: #FFEB3B;
+    // background-color: #FFEB3B;
+    background-color: #B3F2FF;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -45,8 +46,9 @@ body {
         height: 35%;
         top: 65%;
         left: -10%;
-        background-color: #FFEB3B;
-        /* background-color: #CCCCCC;*/
+        // background-color: #FFEB3B;
+        background-color: #B3F2FF;
+        // background-color: #CCCCCC;
         visibility: hidden;
         /* -webkit-transform: rotate(-2deg);*/
         /* transform: rotate(-5deg);*/
@@ -115,17 +117,17 @@ body {
         background-color: #F8E5E2;
     }
 
-    .nexus {
+    .nexus, .ownership, .homeo {
         /* background-color: #E6C4AC;*/
         background-color: #6A9C61;
     }
 
-    .underscore {
+    .underscore, .hbo {
         /* background-color: #E6E6E6;*/
         background-color: #B3B3B3;
     }
 
-    .breakfast {
+    .breakfast, .cascadia {
         /* background-color: #CCAEBA;*/
         background-color: #F5515F;
     }
@@ -135,7 +137,7 @@ body {
         background-color: #CCEEFF;
     }
 
-    .takeout {
+    .takeout, .yellow {
         /* background-color: #E6C4AC;*/
         background-color: #E6A373;
     }
@@ -148,7 +150,7 @@ body {
         text-align: center;
 
         li {
-            /* display: inline;*/
+            // display: inline;
             margin: 2%;
 
             a {
@@ -190,9 +192,11 @@ body {
                 height: 30%;
                 top: 82%;
                 left: -10%;
-                background-color: #FFEB3B;
+                // background-color: #FFEB3B;
+                background-color: #B3F2FF;
+                // background-color: #c43235;
                 // background-color: #000;
-                /* background-color: #CCCCCC;*/
+                // background-color: #CCCCCC;
                 visibility: hidden;
                 /* -webkit-transform: rotate(-2deg);*/
                 /* transform: rotate(-5deg);*/
