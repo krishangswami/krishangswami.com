@@ -85,6 +85,16 @@ $(document).ready(function() {
         });
     }
 
+    // var currentTab = 
+    //
+    // if($('.w-dyn-item').click) {
+    //
+    //   // var currentTab = ???
+    //     //do-some-stuff
+    //     $(window).load(function(){ /*code here*/
+    //       $('.tab').trigger('click');
+    //     })
+    // }
 
 
 //     $(window).on("resize", function() {
