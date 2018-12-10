@@ -85,7 +85,7 @@ $(document).ready(function() {
         });
     }
 
-    // var currentTab = 
+    // var currentTab =
     //
     // if($('.w-dyn-item').click) {
     //
