@@ -47,6 +47,8 @@ h1 {
 
 h3 {
   font-style: italic;
+  margin-top: 2px;
+  line-height: 1.2rem;
 }
 
 .content {
@@ -57,11 +59,37 @@ h3 {
 }
 
 #info {
-  max-width: 475px;
+  // max-width: 475px;
+  max-width: 32vw;
+  min-width: 400px;
+}
+
+.big {
+  font-family: Lato;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 900;
 }
 
 #projects {
   display: inline-block;
+  margin-top: 10vh;
+
+  .outer {
+    margin-top: 20px;
+    // columns: 3;
+    max-width: 80vw;
+    // order: horizontal;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+    .inner {
+      width: 25vw;
+      margin-right: 1vw;
+      break-inside: avoid-column;
+    }
+  }
 
   a {
     display: inline-block;
@@ -76,6 +104,8 @@ h3 {
     }
     img {
       // margin-bottom: 100px;
+      max-width: 25vw;
+      -webkit-filter: brightness(100%);
       -webkit-transition: all 0.3s ease-in-out 0s;
       transition: all 0.3s ease-in-out 0s;
     }
@@ -87,37 +117,38 @@ h3 {
     transition: all 0.3s ease-in-out 0s;
 
     img {
-      transform: scale(1.02);
+      // transform: scale(1.02);
+      -webkit-filter: brightness(50%);
       -webkit-transition: all 0.3s ease-in-out 0s;
       transition: all 0.3s ease-in-out 0s;
     }
   }
 
-  #smart {
-    img {
-      max-width: 600px;
-    }
-  }
-  #hear {
-    img {
-      max-width: 400px;
-    }
-  }
-  #hbo {
-    img {
-      max-width: 700px;
-    }
-  }
-  #playfare {
-    img {
-      max-width: 600px;
-    }
-  }
-  #bigone {
-    img {
-      max-width: 400px;
-    }
-  }
+  // #smart {
+  //   img {
+  //     max-width: 600px;
+  //   }
+  // }
+  // #hear {
+  //   img {
+  //     max-width: 400px;
+  //   }
+  // }
+  // #hbo {
+  //   img {
+  //     max-width: 700px;
+  //   }
+  // }
+  // #playfare {
+  //   img {
+  //     max-width: 600px;
+  //   }
+  // }
+  // #bigone {
+  //   img {
+  //     max-width: 400px;
+  //   }
+  // }
 }
 
 @media (max-width: 800px) {
