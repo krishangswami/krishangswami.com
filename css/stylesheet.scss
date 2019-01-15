@@ -151,6 +151,34 @@ h3 {
   // }
 }
 
+@media (max-width: 1024px) {
+
+  #projects {
+    .outer {
+      margin-top: 20px;
+      // columns: 3;
+      max-width: 80vw;
+      // order: horizontal;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+
+      .inner {
+        width: 36vw;
+        margin-right: 1vw;
+        break-inside: avoid-column;
+      }
+    }
+
+    a {
+      img {
+        max-width: 36vw;
+      }
+    }
+  }
+
+}
+
 @media (max-width: 800px) {
   .content {
     margin-top: 10vh;
@@ -164,10 +192,58 @@ h3 {
   }
 
   #projects {
+    .outer {
+      margin-top: 20px;
+      // columns: 3;
+      max-width: 80vw;
+      // order: horizontal;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+
+      .inner {
+        width: 43vw;
+        margin-right: 1vw;
+        break-inside: avoid-column;
+      }
+    }
+
     a {
       max-width: 90vw;
+
+      img {
+        max-width: 43vw;
+      }
     }
-    #smart, #hear, #hbo, #playfare, #bigone {
+  }
+}
+
+@media (max-width: 450px) {
+  #info {
+    max-width: 90vw;
+    min-width: 0px;
+  }
+
+  #projects {
+    .outer {
+      margin-top: 20px;
+      // columns: 3;
+      max-width: 80vw;
+      // order: horizontal;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+
+      .inner {
+        width: 90vw;
+        margin-right: 1vw;
+        break-inside: avoid-column;
+      }
+    }
+
+    a {
+      max-width: 90vw;
+
       img {
         max-width: 90vw;
       }
