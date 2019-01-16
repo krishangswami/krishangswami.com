@@ -99,7 +99,7 @@ h3 {
 }
 
 .hear-vid {
-  pointer-events: none;
+  // pointer-events: none;
 }
 
 .encrypt {
@@ -718,18 +718,23 @@ body.active {
       margin-left: 5vw;
 
       #info {
-        max-width: 50vw;
+        max-width: 35vw;
+        min-width: 0px;
       }
 
       #projects {
         a {
-          max-width: 50vw;
-        }
-        #smart, #hear, #hbo, #playfare, #bigone {
+          max-width: 35vw;
+
           img {
-            max-width: 50vw;
+            max-width: 35vw;
           }
         }
+        // #smart, #hear, #hbo, #playfare, #bigone {
+        //   img {
+        //     max-width: 50vw;
+        //   }
+        // }
       }
     }
   }
