@@ -16,21 +16,30 @@ document.addEventListener('play', function(e){
 // }, true);
 
 $(document).ready(function(){
-  $('audio').click(function() {
-    if (this.paused) {
-      this.play();
-    } else {
-      this.pause();
-    }
-      $('audio').css("border", "1px solid #CCC");
-    // };
-    // e.preventDefault();
-    this.onplaying = function() {
-      $(this).css("border", "1px solid #0256FF");
-      // $(this).css("position", "fixed");
-      // $(this).css("border-left", "4px solid #0256FF");
-    };
-  });
+  // $('audio').click(function() {
+  //   // if (this.paused) {
+  //   //   this.play();
+  //   // } else {
+  //   //   this.pause();
+  //   // }
+  //   $(this).addClass('active');
+  //
+  //   // if (!$('audio').hasClass('active')) {
+  //   //     $('audio').addClass('active');
+  //   //     // $('#options').focus();
+  //   // } else {
+  //   //     $('audio').removeClass('active');
+  //   //     // $('#options').blur();
+  //   // }
+  //   // $('audio').css("border", "1px solid #CCC");
+  //   // };
+  //   // e.preventDefault();
+  //   // $('audio::-webkit-media-controls-play-button').click(function() {
+  //     // $('audio').css("border", "1px solid #0256FF");
+  //     // $(this).css("position", "fixed");
+  //     // $(this).css("border-left", "4px solid #0256FF");
+  //   // });
+  // });
 
   $(window).scroll(function() {
       if ($(window).scrollTop() < 400) {
