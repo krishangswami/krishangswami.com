@@ -1,0 +1,511 @@
+body {
+    font-family: Rubik;
+
+    #name {
+        position: fixed;
+        top: 50px;
+        left: 50px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .timer-group {
+        width: 100%;
+        position: fixed;
+        top: 40px;
+        z-index: 20;
+        color: #333333;
+    }
+
+    #timer {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 100px;
+        height: 20px;
+        font-weight: 500;
+    }
+
+    #explain {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+
+    .timer-two {
+        color: #FFF;
+        background-color: transparent;
+        transition: color 0.5s ease-in-out;
+    }
+
+    #content {
+        overflow: hidden;
+        width: 1380px;
+        margin-top: 200px;
+        margin-left: calc(50% - 690px);
+
+        .visuals {
+            columns: 3;
+
+            li {
+                position: relative;
+                display: inline-block;
+                width: 420px;
+                height: 200px;
+                margin: 0 0px 100px;
+            }
+        }
+
+        .vis {
+            max-width: 100%;
+            max-height: 100%;
+            max-height: 200px;
+            z-index: 2;
+        }
+
+        .v-tree {
+            // 5,000 trees per rotation - 10.41666666s
+            //
+            // 4000 trees - 8.333333
+            -moz-animation: spin 8.333333s infinite linear;
+            -webkit-animation: spin 8.33333s infinite linear;
+        }
+
+        .v-water {
+            // 1000 million litres per rotation - 1 billion litres - 28.57
+            //
+            // 100,000 thousand litres per rotation - 2.875 - 3.1mm
+            //
+            // 100,000 thousand litres per rotation - 3.4mm - 2.5765s
+            -moz-animation: spin 2.5765s infinite linear;
+            -webkit-animation: spin 2.5765s infinite linear;
+        }
+
+        .v-death {
+            // 10 people per rotation
+            -moz-animation: spin 41.1s infinite linear;
+            -webkit-animation: spin 41.1s infinite linear;
+        }
+
+        .v-waste {
+            // 15,000 people per rotation - 4.732s
+            //
+            // 1000 people per rotation
+            -moz-animation: spin 13.6986s infinite linear;
+            -webkit-animation: spin 13.6986s infinite linear;
+        }
+
+        .v-likes {
+            // 100,000 likes per rotation - 3.333333s
+            //
+            // 75,000 likes per rotation - 2.4999999s
+            //
+            // 50,000 - 1.666665
+            -moz-animation: spin 3.3333s infinite linear;
+            -webkit-animation: spin 3.3333s infinite linear;
+        }
+
+        .v-posts {
+            // 5,000 posts per rotation - 770 per second - 6.4935
+            //
+            // 5,000 posts per rotation - 933 per second - 5.3571
+            //
+            // 5,000 posts per rotation - 1117 per second - 4.476
+            //
+            // 8,000 posts per rotation - 1117 per second - 7.162s
+            -moz-animation: spin 7.162s infinite linear;
+            -webkit-animation: spin 7.162s infinite linear;
+        }
+
+        .image,
+        .images {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.2);
+            box-sizing: border-box;
+        }
+
+        .line {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 125px;
+            height: 1px;
+            background-color: #333333;
+        }
+
+        .info {
+            position: absolute;
+            left: 230px;
+            top: 45px;
+            color: #333333;
+
+            .vis-title {
+                letter-spacing: 2px;
+            }
+
+            .num {
+                height: 20px;
+                font-weight: 500;
+            }
+
+            .metric {
+                height: 20px;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            .metric-info {
+                height: 20px;
+                padding: 5px 10px;
+                line-height: 20px;
+                border-radius: 5px;
+                background-color: #333333;
+                color: #FFF;
+                font-size: 0.8rem;
+            }
+        }
+
+        .cover {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .cover-on {
+            position: fixed;
+            z-index: 9;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.90);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .extrainfo {
+            display: none;
+            z-index: 10;
+            position: fixed;
+            width: 60vw;
+            height: 70vh;
+            top: 15vh;
+            left: 20vw;
+            background-color: #fff;
+            box-shadow: 0 3px 10px 0 rgba(0,0,0,0.40);
+            transition: all 0.5s ease-in-out;
+            //   border: 10px solid #429321;
+
+            .move {
+                position: absolute;
+                width: 50%;
+                margin-top: 80px;
+                text-align: center;
+
+                .info {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+
+                    ul {
+                        margin-top: 40px;
+                        font-weight: 500;
+                    }
+                }
+
+                p3 {
+                    font-weight: 300;
+                    font-style: italic;
+                }
+
+                li {
+                    margin-bottom: 25px;
+                }
+            }
+
+            .linepop {
+                position: absolute;
+                left: 50%;
+                top: 20px;
+                width: 1px;
+                height: calc(100% - 40px);
+                background-color: #f3f3f3;
+            }
+
+            .desc {
+                position: absolute;
+                width: 40%;
+                left: 55%;
+                margin-top: 80px;
+
+                p {
+                    font-style: italic;
+                    line-height: 1.5rem;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                }
+
+                li {
+                    line-height: 2rem;
+                    margin-left: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: #000000;
+                        font-weight: 500;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .active {
+            display: block;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 11;
+            transition: all 0.3s ease-in-out;
+
+            .icons {
+                margin: 0 auto;
+                background-color: #000;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .icon-one {
+                width: 30px;
+                height: 2px;
+                margin-top: 24px;
+                margin-bottom: -2px;
+                transform: rotate(45deg);
+            }
+
+            .icon-two {
+                width: 30px;
+                height: 2px;
+                transform: rotate(-45deg);
+            }
+        }
+
+        .button:hover {
+            background-color: #333333;
+
+            .icons {
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+
+    0% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    0% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@media (max-width: 1350px) {
+    body {
+        #content {
+            margin-top: 150px;
+
+            .visuals {
+                transform: scale(0.8);
+            }
+        }
+    }
+}
+@media (max-width: 1150px) {
+    body {
+        .timer-group {
+            top: 0px;
+            background-color: #ffffff;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            box-shadow: 0 3px 10px 0 rgba(0,0,0,0.10);
+        }
+        .timer-two {
+            color: #333333;
+        }
+
+        #content {
+            margin-top: 200px;
+            width: 860px;
+            margin-left: calc(50% - 430px);
+
+            .visuals {
+                transform: scale(1);
+                columns: 2;
+            }
+
+            .extrainfo {
+                width: 80vw;
+                height: 70vh;
+                top: 15vh;
+                left: 10vw;
+            }
+        }
+    }
+}
+@media (max-width: 880px) {
+    body {
+        #content {
+            width: 420px;
+            margin-left: calc(50% - 210px);
+
+            .visuals {
+                columns: 1;
+            }
+
+            .extrainfo {
+                width: calc(100% - 50px);
+                height: 80vh;
+                top: 15vh;
+                left: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 775px) {
+    body {
+        #content {
+            .extrainfo {
+                overflow: scroll;
+                width: calc(100% - 50px);
+
+                .move {
+                    position: relative;
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-top: 40px;
+
+                    .info {
+                        position: relative;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+
+                        ul {
+                            margin-top: 40px;
+                            margin-bottom: 20px;
+                            columns: 3;
+                        }
+                    }
+                }
+
+                .linepop {
+                    position: static;
+                    margin-left: 5%;
+                    height: 1px;
+                    width: 90%;
+                }
+
+                .desc {
+                    position: static;
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    text-align: center;
+
+                    p {
+                        font-style: italic;
+                        line-height: 1.5rem;
+                        font-weight: 400;
+                        text-align: left;
+                    }
+
+                    li {
+                        text-align: center;
+                        line-height: 2rem;
+                        margin-left: 0px;
+                        break-inside: avoid-column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+
+        #content {
+            margin-top: -50px;
+
+            .visuals {
+                transform: scale(0.8);
+            }
+
+            .extrainfo {
+
+                .move {
+
+                    .info {
+
+                        ul {
+                            columns: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        #content {
+            margin-top: -100px;
+
+            .visuals {
+                transform: scale(0.7);
+            }
+
+            .extrainfo {
+
+                .move {
+
+                    .info {
+
+                        ul {
+                            columns: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

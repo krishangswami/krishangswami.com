@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <title>Playfare</title>
+    <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900,900i" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="code.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- <div id="name">
+        PLAYFARE
+    </div> -->
+
+    <!-- Timer up top that counts the time since the page was loaded -->
+    <div class="timer-group">
+        <p id="timer">00:00:00</p>
+        <p id="explain">since page opened</p>
+    </div>
+
+    <!-- The main content -->
+    <div id="content">
+        <!-- The visuals with the rotating circles -->
+        <ul class="visuals">
+            <li class="tree-vis">
+                <img class="vis v-tree" src="images/green.png" alt="">
+                <div class="line"></div>
+                <img class="image tree" src="images/tree.png" alt="">
+                <div class="info">
+                    <p class="vis-title">DEFORESTATION</p>
+                    <br><br>
+                    <p class="num num-trees">0</p>
+                    <p class="metric">trees cut</p>
+                    <p class="metric-info">15 billion trees per year</p>
+                </div>
+            </li>
+            <li class="posts-vis">
+                <img class="vis v-posts" src="images/insta.png" alt="">
+                <div class="line"></div>
+                <img class="image posts" src="images/posts.png" alt="">
+                <div class="info">
+                    <p class="vis-title">INSTAGRAM POSTS</p>
+                    <br><br>
+                    <p class="num num-posts">0</p>
+                    <p class="metric">new instagram posts</p>
+                    <p class="metric-info">24.2 billion posts per year‎</p>
+                </div>
+            </li>
+            <li class="death-vis">
+                <img class="vis v-death" src="images/black.png" alt="">
+                <div class="line"></div>
+                <img class="image death" src="images/death.png" alt="">
+                <div class="info">
+                    <p class="vis-title">STARVATION</p>
+                    <br><br>
+                    <p class="num num-death">0</p>
+                    <p class="metric">people starved to death</p>
+                    <p class="metric-info">7.67 million people per year</p>
+                </div>
+            </li>
+            <li class="waste-vis">
+                <img class="vis v-waste" src="images/red.png" alt="">
+                <div class="line"></div>
+                <img class="image waste" src="images/waste.png" alt="">
+                <div class="info">
+                    <p class="vis-title">WASTED FOOD</p>
+                    <br><br>
+                    <p class="num num-waste">0</p>
+                    <p class="metric">tons of food wasted</p>
+                    <p class="metric-info">2.3 billion tons per year</p>
+                </div>
+            </li>
+            <li class="water-vis">
+                <img class="vis v-water" src="images/blue.png" alt="">
+                <div class="line"></div>
+                <img class="image water" src="images/water.png" alt="">
+                <div class="info">
+                    <p class="vis-title">SEA LEVEL RISE</p>
+                    <br><br>
+                    <p class="num num-water">0</p>
+                    <p class="metric">thousand litres water</p>
+                    <p class="metric-info">1,224 trillion litres per year</p>
+                </div>
+            </li>
+            <li class="like-vis">
+                <img class="vis v-likes" src="images/facebook.png" alt="">
+                <div class="line"></div>
+                <img class="image likes" src="images/likes.png" alt="">
+                <div class="info">
+                    <p class="vis-title">FACEBOOK LIKES</p>
+                    <br><br>
+                    <p class="num num-likes">0</p>
+                    <p class="metric">new facebook likes</p>
+                    <p class="metric-info">946 billion likes per year</p>
+                </div>
+            </li>
+        </ul>
+
+        <!-- The pop-up once the circle is clicked -->
+        <div class="cover"></div>
+        <div class="extrainfo tree-info">
+            <div class="button">
+                <div class="icons icon-one"></div>
+                <div class="icons icon-two"></div>
+            </div>
+            <div class="move tree-vis">
+                <div class="info">
+                    <p class="vis-title">DEFORESTATION</p>
+                    <br><br>
+                    <p class="num num-trees">0</p>
+                    <p class="metric">trees cut</p>
+                    <ul>
+                        <li>476<br>
+                            <p3>per second</p3>
+                        </li>
+                        <li>28,538 <br>
+                            <p3>per minute</p3>
+                        </li>
+                        <li>1,712,328 <br>
+                            <p3>per hour</p3>
+                        </li>
+                        <li>41,095,890 <br>
+                            <p3>per day</p3>
+                        </li>
+                        <li>15 billion <br>
+                            <p3>per year</p3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linepop"></div>
+            <div class="desc">
+                <p>
+                    "Forests are more than just a collection of trees—they are integrated ecosystems and home to some of the most diverse life on Earth. They are also major players in the carbon and water cycles that make life possible. When forests are lost or degraded,
+                    their destruction sets off a series of changes that affect life both locally and around the world."
+                </p>
+                Sources or other links:<br><br>
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://www.nature.com/articles/nature14967.epdf?referrer_access_token=q6H9VR35tFbRRPls-we8b9RgN0jAjWel9jnR3ZoTv0PkYJmQ6VQcpxIB4Tt0SaQy_TViN9dLBJXbXpFkkWGX7RsUA_8a8_uEeuFNil0kTIiDDSPq7px4H3IiRCoW6JEZfZ2TCGutz3VPgv3j19khbnCVGVzdK87GiFRSkvsQCs-9S6cA2TEGNiCwj1Dg9_0F9eCtP80oB9OrymZmFzrmNg%3D%3D&tracking_referrer=time.com">nature.com</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.worldwildlife.org/threats/deforestation">World wild life</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://time.com/4019277/trees-humans-deforestation/">TIME</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.livescience.com/27692-deforestation.html">Live science</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="extrainfo posts-info">
+            <div class="button">
+                <div class="icons icon-one"></div>
+                <div class="icons icon-two"></div>
+            </div>
+            <div class="move posts-vis">
+                <div class="info">
+                    <p class="vis-title">INSTAGRAM POSTS</p>
+                    <br><br>
+                    <p class="num num-posts">0</p>
+                    <p class="metric">new instagram posts</p>
+                    <ul>
+                        <li>1117<br>
+                            <p3>per second</p3>
+                        </li>
+                        <li>67,000 <br>
+                            <p3>per minute</p3>
+                        </li>
+                        <li>4,020,000 <br>
+                            <p3>per hour</p3>
+                        </li>
+                        <li>96,480,000 <br>
+                            <p3>per day</p3>
+                        </li>
+                        <li>35.2 billion <br>
+                            <p3>per year</p3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linepop"></div>
+            <div class="desc">
+                <p>
+                    "We all know activity on the internet on a daily basis moves at lightening speed, but there’s something about having the numbers in front of you that makes it just a little bit more fascinating." <br> <br> The trouble with this visualization
+                    was that there were a lot of contradicting sources of information and I had to pick one out of the many available.
+                </p>
+                Sources or other links:<br><br>
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://blog.qmee.com/online-in-60-seconds-infographic-a-year-later/">QMEE</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.internetlivestats.com/one-second/#instagram-band">Internet live stats</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="extrainfo death-info">
+            <div class="button">
+                <div class="icons icon-one"></div>
+                <div class="icons icon-two"></div>
+            </div>
+            <div class="move death-vis">
+                <div class="info">
+                    <p class="vis-title">STARVATION</p>
+                    <br><br>
+                    <p class="num num-death">0</p>
+                    <p class="metric">people starved to death</p>
+                    <ul>
+                        <li>0.25<br>
+                            <p3>per second</p3>
+                        </li>
+                        <li>15<br>
+                            <p3>per minute</p3>
+                        </li>
+                        <li>875<br>
+                            <p3>per hour</p3>
+                        </li>
+                        <li>21,000<br>
+                            <p3>per day</p3>
+                        </li>
+                        <li>7,665,000<br>
+                            <p3>per year</p3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linepop"></div>
+            <div class="desc">
+                <p>
+                    "Every day too many men and women across the globe struggle to feed their children a nutritious meal. In a world where we produce enough food to feed everyone, 795 million people – one in nine – still go to bed on an empty stomach each night. Even more
+                    – one in three – suffer from some form of malnutrition."
+                </p>
+                Sources or other links:<br><br>
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://www1.wfp.org/zero-hunger">World food programme</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.poverty.com/">Poverty</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.actionagainsthunger.org/hunger-facts?gclid=CjwKEAjwqZ7GBRC1srKSv9TV_iwSJADKTjaD6WN6TkeCdQIIf2eC7vgDeF3tcTmIv40sbrIr4jItuRoCC6nw_wcB">Action against hunger</a>
+                    </li>
+                    <!-- <li>
+                        <a target="_blank" href="https://www.unicef.org/sowc2016/">UNICEF</a>
+                    </li> -->
+                    <li>
+                        <a target="_blank" href="https://www.bostonglobe.com/news/world/2017/03/10/people-will-simply-starve-death-official-warns-hunger-crisis/qnDn4hms6OT5SxS71nL35J/story.html">Boston Globe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="extrainfo waste-info">
+            <div class="button">
+                <div class="icons icon-one"></div>
+                <div class="icons icon-two"></div>
+            </div>
+            <div class="move waste-vis">
+                <div class="info">
+                    <p class="vis-title">WASTED FOOD</p>
+                    <br><br>
+                    <p class="num num-waste">0</p>
+                    <p class="metric">tons of food wasted</p>
+                    <ul>
+                        <li>73<br>
+                            <p3>per second</p3>
+                        </li>
+                        <li>4,376 <br>
+                            <p3>per minute</p3>
+                        </li>
+                        <li>2,262,557 <br>
+                            <p3>per hour</p3>
+                        </li>
+                        <li>6,301,369 <br>
+                            <p3>per day</p3>
+                        </li>
+                        <li>24.2 billion <br>
+                            <p3>per year</p3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linepop"></div>
+            <div class="desc">
+                <p>
+                    "When we scrape off our dishes after a large meal, too full to finish the remaining scraps on our plate, we rarely pause and think about the significance of our action. It seems routine to us: if we have leftover food scraps that are unfit for eating,
+                    shouldn’t they be thrown in the garbage? Our routine practices, unfortunately, make it difficult for us to conceptualize the magnitude of global food waste. The problem is bigger than we think."
+                </p>
+                Sources or other links:<br><br>
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://www.worldfooddayusa.org/food_waste_the_facts">World food day USA</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.worldfooddayusa.org/food_waste_the_facts">World resources institute</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://fortune.com/2014/07/24/ice-cream-sales/">Scream for icecream?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="extrainfo water-info">
+            <div class="button">
+                <div class="icons icon-one"></div>
+                <div class="icons icon-two"></div>
+            </div>
+            <div class="move water-vis">
+                <div class="info">
+                    <p class="vis-title">SEA LEVEL RISE</p>
+                    <br><br>
+                    <p class="num num-water">0</p>
+                    <p class="metric">thousand litres of water</p>
+                    <ul>
+                        <li>38,812,785 <br>
+                            <p3>per second</p3>
+                        </li>
+                        <li>2.33 billion <br>
+                            <p3>per minute</p3>
+                        </li>
+                        <li>140 billion <br>
+                            <p3>per hour</p3>
+                        </li>
+                        <li>3.35 trillion <br>
+                            <p3>per day</p3>
+                        </li>
+                        <li>1224 trillion <br>
+                            <p3>per year</p3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linepop"></div>
+            <div class="desc">
+                <p>
+                    "Global sea level rose about 17 centimeters (6.7 inches) in the last century. The rate in the last decade, however, is nearly double that of the last century."
+                    <br><br> Although the information from the source, NASA, focused on change in millimeters I referred to other websites and did some math to convert the numbers into litres for more a poignant effect.
+                </p>
+                Sources or other links:<br><br>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://climate.nasa.gov/vital-signs/sea-level/">NASA - Vital signs</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://climate.nasa.gov/evidence/">NASA - Evidence</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://climatesanity.wordpress.com/conversion-factors-for-ice-and-water-mass-and-volume/">Conversion factors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="extrainfo likes-info">
+            <div class="button">
+                <div class="icons icon-one"></div>
+                <div class="icons icon-two"></div>
+            </div>
+            <div class="move likes-vis">
+                <div class="info">
+                    <p class="vis-title">FACEBOOK LIKES</p>
+                    <br><br>
+                    <p class="num num-likes">0</p>
+                    <p class="metric">new facebook likes</p>
+                    <ul>
+                        <li>30,000<br>
+                            <p3>per second</p3>
+                        </li>
+                        <li>1,800,000 <br>
+                            <p3>per minute</p3>
+                        </li>
+                        <li>108,000,000 <br>
+                            <p3>per hour</p3>
+                        </li>
+                        <li>2.59 billion <br>
+                            <p3>per day</p3>
+                        </li>
+                        <li>946 billion <br>
+                            <p3>per year</p3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linepop"></div>
+            <div class="desc">
+                <p>
+                    "We all know activity on the internet on a daily basis moves at lightening speed, but there’s something about having the numbers in front of you that makes it just a little bit more fascinating."<br><br>This data is used for contrast
+                    with the more morbid realities of our time.
+                </p>
+                Sources or other links:<br><br>
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://www.dailymail.co.uk/sciencetech/article-2381188/Revealed-happens-just-ONE-minute-internet-216-000-photos-posted-278-000-Tweets-1-8m-Facebook-likes.html">Dailymail</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://blog.qmee.com/qmee-online-in-60-seconds/">QMEE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
