@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "monoBold";
+  src: url("office-code-pro/OfficeCodePro-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "monoReg";
+  src: url("office-code-pro/OfficeCodePro-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: 'monoReg', 'Lato', sans-serif;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  ::selection {
+    // background: #0256FF;
+    background: rgba(2,86,255,0.60);
+    color: #FFF;
+  }
+}
+
+.blue {
+  // color: #0256FF;
+  color: #C35A6C;
+  font-family: 'monoBold';
+}
+
+.bolder {
+  font-family: 'monoBold';
+}
+
+.link {
+  text-decoration: underline;
+  // font-family: 'monoReg';
+
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.link:hover {
+  // font-family: 'monoBold';
+  // color: #0256FF;
+  color: #C35A6C;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h1 {
+  font-family: 'monoBold';
+}
+
+h3 {
+  font-style: italic;
+  // margin-top: 2px;
+  line-height: 1.2rem;
+}
+
+.content {
+  margin-top: 10vh;
+  margin-left: 35vw;
+
+  line-height: 25px;
+}
+
+#info {
+  // max-width: 475px;
+  max-width: 30vw;
+  min-width: 320px;
+}
+
+@media (max-width: 800px) {
+  .content {
+    margin-top: 10vh;
+    margin-left: 10vw;
+
+    line-height: 25px;
+  }
+
+  #info {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    margin-top: 10vh;
+    margin-left: 5vw;
+
+    line-height: 25px;
+  }
+
+  #info {
+    max-width: 90vw;
+    min-width: 0px;
+  }
+}
