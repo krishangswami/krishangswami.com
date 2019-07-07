@@ -214,6 +214,9 @@ h5 {
     padding-top: 10px;
     padding-bottom: 15px;
     color: #FFF;
+
+    -webkit-transition: background-color 0.3s ease-in-out 0s;
+    transition: background-color 0.3s ease-in-out 0s;
   }
 }
 
@@ -225,6 +228,9 @@ h5 {
 
   a {
     color: #C35A6C;
+
+    -webkit-transition: background-color 0.3s ease-in-out 0s;
+    transition: background-color 0.3s ease-in-out 0s;
   }
 }
 
