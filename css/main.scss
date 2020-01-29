@@ -2,6 +2,7 @@
   font-family: "Regular";
   src: url("Inter/Inter-Regular.otf") format("truetype");
 }
+
 @font-face {
   font-family: "Inter-SemiBold";
   src: url("Inter/Inter-SemiBold.otf") format("truetype");
@@ -24,107 +25,104 @@ body {
   // }
 }
 
-// .blue {
-//   // color: #0256FF;
-//   color: #C35A6C;
-//   font-family: 'monoBold';
-// }
-//
-// .bolder {
-//   font-family: 'monoBold';
-// }
-
 .link {
-  // text-decoration: underline;
-  // font-family: 'monoReg';
-
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .link:hover {
-  // font-family: 'monoBold';
-  // color: #0256FF;
   color: #738EA5;
+
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-}
-
-// h1 {
-//   font-family: 'monoBold';
-// }
-//
-// h3 {
-//   font-style: italic;
-//   // margin-top: 2px;
-//   line-height: 1.2rem;
-// }
-
-#top-sec {
-  // position: absolute;
-  margin-top: 40px;
-  margin-left: 40px;
-
-  max-width: calc(100vw - 80px);
-
-  div {
-    // margin-bottom: 80px;
-  }
-}
-
-.section {
-  max-width: 440px;
-  // max-width: calc(100vw - 80px);
-  // margin-bottom: 80px;
-}
-
-.title {
-  margin-bottom: 80px;
 }
 
 .blue {
   color: #BADBF7;
 }
 
-#bottom-sec {
+header {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+
+  // max-width: calc(100vw - 80px);
+  max-width: 440px;
+
+  h1 {
+    margin-bottom: 80px;
+  }
+}
+
+#hear {
   position: absolute;
+
+  top: 0vh;
+  left: 520px;
+  height: 100vh;
+  width: calc(100vw - 520px);
+
+  overflow: scroll;
+//
+//
+//   // ../files/hear/mix-1.jpg
+//
+//   img {
+//     // height: 60vh;
+//     // width: 30vw;
+//     max-width: 100%;
+//     // max-height: 100%;
+//   }
+
+  section {
+    height: 100%;
+    max-width: 100%;
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../files/hear/mix-1.jpg);
+  }
+
+  .one {
+    // background-image: url(../files/hear/mix-1.jpg);
+  }
+  .two {
+    background-image: url(../files/hear/mix-2.jpg);
+  }
+  .three {
+    background-image: url(../files/hear/mix-3.jpg);
+  }
+  .four {
+    background-image: url(../files/hear/mix-4.jpg);
+  }
+}
+
+footer {
+  position: fixed;
   bottom: 40px;
   left: 40px;
 
-  max-width: calc(100vw - 80px);
+  // max-width: calc(100vw - 80px);
+  max-width: 440px;
 }
 
 #placeholder {
   display: inline-block;
   width: 40px;
-  // height: calc(100vh - 502px);
   height: 2px;
   background-color: #9FCAEF;
   border-radius: 2px;
-  // margin-top: 80px;
-  // margin-bottom: 80px;
-
-  // background: #ccc;
+  margin-top: 40px;
 }
-
-#info {
-  // max-width: 475px;
-  max-width: 440px;
-  min-width: 320px;
-}
-
-// @media (max-width: 800px) {
-//
-// }
 
 @media (max-width: 450px) {
-  #top-sec {
+  header{
     margin-top: 20px;
     margin-left: 20px;
     max-width: calc(100vw - 40px);
   }
 
-  #bottom-sec {
+  footer {
     bottom: 20px;
     left: 20px;
   }
