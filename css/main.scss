@@ -63,9 +63,8 @@ header {
   width: calc(100vw - 520px);
 
   overflow: scroll;
-//
-//
-//   // ../files/hear/mix-1.jpg
+
+//   ../files/hear/mix-1.jpg
 //
 //   img {
 //     // height: 60vh;
@@ -117,13 +116,14 @@ footer {
 
 @media (max-width: 450px) {
   header{
-    margin-top: 20px;
-    margin-left: 20px;
+    top: 20px;
+    left: 20px;
     max-width: calc(100vw - 40px);
   }
 
   footer {
     bottom: 20px;
     left: 20px;
+    max-width: calc(100vw - 40px);
   }
 }
