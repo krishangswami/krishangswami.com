@@ -25,6 +25,17 @@ body {
   // }
 }
 
+.main-container {
+  display: flex;
+
+  .level {
+    flex-grow: 1.5;
+    height: 100vh;
+  }
+}
+
+
+
 .link {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
@@ -42,12 +53,13 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 40px;
-  left: 40px;
+  // position: fixed;
+  // top: 40px;
+  // left: 40px;
+  margin: 40px;
 
   // max-width: calc(100vw - 80px);
-  max-width: 440px;
+  // max-width: 440px;
 
   h1 {
     margin-bottom: 80px;
