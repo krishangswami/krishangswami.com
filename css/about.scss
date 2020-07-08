@@ -236,6 +236,13 @@ h3 {
   // font-weight: 500;
 }
 
+.desc-text {
+  // width: calc(24vw - 80px);
+  // width: 24vw;
+  width: 40%;
+  min-width: 320px;
+}
+
 .icon {
   min-height: 16px;
   min-width: 16px;
@@ -251,6 +258,14 @@ h3 {
 .s-ques {
   background-image: url("../files/icons/question.svg");
   // min-width: 22px !important;
+}
+
+.s-file {
+  background-image: url("../files/icons/file.svg");
+}
+
+.s-video {
+  background-image: url("../files/icons/film.svg");
 }
 
 .indent {
