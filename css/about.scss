@@ -397,7 +397,7 @@ h3 {
 
   .nav {
     width: 12vw;
-    min-width: 256px;
+    min-width: 160px;
 
     -webkit-transition: all 1s ease-in-out 0s;
     transition: all 1s ease-in-out 0s;
@@ -429,29 +429,6 @@ h3 {
       // transition: all 0.8s ease-in-out 0s;
     }
   }
-
-  // .flexed {
-  //   flex-grow: auto;
-  //   // transition: flex-grow 5000ms linear;
-  //   -webkit-transition: all 0.5s ease-in-out 0s;
-  //   transition: all 0.5s ease-in-out 0s;
-  // }
-  // .removed {
-  //   flex-basis: 0.00001;
-  //   min-width: 0px;
-  //   width: 0px !important;
-  //   padding: 0px !important;
-  //   // transition: flex-grow 50000ms linear;
-  //   -webkit-transition: all 1s ease-in-out 0s;
-  //   transition: all 1s ease-in-out 0s;
-  //
-  //   .itemOne {
-  //     opacity: 0;
-  //
-  //     -webkit-transition: all 0.1s ease-in-out 0s;
-  //     transition: all 0.1s ease-in-out 0s;
-  //   }
-  // }
 
   .not-nav {
     // width: 2vw;
@@ -510,7 +487,7 @@ h3 {
 
   .desc {
     overflow: scroll;
-    width: 24vw;
+    width: 20vw;
     min-width: 320px;
 
     .top-sec {
@@ -535,7 +512,7 @@ h3 {
   .conts {
     overflow: scroll;
     // width: 100%;
-    // min-width: 320px;
+    // min-width: 640px;
     img {
       max-width: 100%;
     }
