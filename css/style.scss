@@ -27,7 +27,21 @@ body {
   //   background: rgba(195,90,108,0.60);
   //   color: #FFF;
   // }
+  ::selection {
+    // background: #0256FF;
+    // background: rgba(2,86,255,0.60);
+    background: #EEFFD9;
+    // color: #FFF;
+  }
 }
+
+canvas{
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
 
 
 // LINKS

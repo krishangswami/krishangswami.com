@@ -28,8 +28,8 @@ body {
   ::selection {
     // background: #0256FF;
     // background: rgba(2,86,255,0.60);
-    background: rgba(195,90,108,0.60);
-    color: #FFF;
+    background: #EEFFD9;
+    // color: #FFF;
   }
 }
 
@@ -195,6 +195,10 @@ body {
 
 .gray {
   color: #ACB4C3;
+}
+
+.sub-title {
+  margin-bottom: 8px;
 }
 
 ul {
