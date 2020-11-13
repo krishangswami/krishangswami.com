@@ -42,11 +42,101 @@ canvas{
   height: 100vh;
 }
 
+.noSpace {
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+}
+
 
 
 // LINKS
 
+.pageLink {
+  // background-color: #EEFFD9;
+  overflow: auto;
+
+  .desc-text {
+    width: 100%;
+  }
+
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+
+  .pageName {
+    display: inline-block;
+    border-bottom: 1px solid #DCDFE5;
+    // color: #333B47;
+
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+
+    -webkit-transition: all 0s ease-in-out 0s;
+    transition: all 0s ease-in-out 0s;
+
+  }
+
+  .pageImage {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+    // width: 640px;
+
+    // height: 0px;
+    text-align: right;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    z-index: 9;
+
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+
+    img {
+      max-width: 640px;
+      max-height: 48vh;
+      object-fit: contain;
+
+      align-items: right;
+
+      box-shadow: 0px 16px 64px rgba(243, 245, 255, 0.4), 0px 8px 24px rgba(107, 122, 148, 0.08);
+    }
+  }
+}
+
+.pageLink:hover {
+  color: #6C7A93;
+  // background-color: #EEFFD9;
+
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+
+  .pageName {
+    // border-bottom: 1px solid #6BE0BF;
+    border-bottom: 1px solid #DCDFE5;
+    padding-bottom: 1px;
+
+    -webkit-transition: all 0s ease-in-out 0s;
+    transition: all 0s ease-in-out 0s;
+
+  }
+
+  .pageImage {
+    visibility: visible;
+    opacity: 1;
+
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+
+    img {
+
+    }
+  }
+}
+
 .link {
+  // border-bottom: 1px solid #6C7A93;
 
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
@@ -82,26 +172,26 @@ canvas{
 
 // LINK IN THE BODY COPY ITSELF
 .bodyLink {
-  border-bottom: 1px solid #6C7A93;
+  border-bottom: 1px solid #DCDFE5;
   color: #333B47;
 
   // #7FE0FF;
   padding-bottom: 2px;
   // border-radius: 1px;
 
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 
 .bodyLink:hover {
   // color: #6BE0BF;
-    color: #6C7A93;
-  border-bottom: 1px solid #6BE0BF;
+  color: #6C7A93;
+  border-bottom: 1px solid #DCDFE5;
   padding-bottom: 2px;
 // color: #6BE0BF;
 
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 
 .tags {
@@ -124,7 +214,15 @@ canvas{
     background-color: #E8EAFF;
   }
   .type-tag {
-    background-color: #E0F8FF;
+    background-color: #EEFFD9;
+  }
+
+  .type-tag-two {
+    font-size: 18px;
+    line-height: 28px;
+    // background-color: #EEFFD9;
+    padding: 0px;
+    border-bottom: 2px solid #EEFFD9;
   }
 }
 
@@ -140,6 +238,7 @@ canvas{
   // background-color: #9FCAEF;
   // background-color: #6BE0BF
   background-color: #DCDFE5;
+  // background-color: #ADB5C3;
   // background-color: #6C7A93;
   border-radius: 2px;
   // margin-top: 40px;
@@ -174,6 +273,11 @@ ul {
   }
 }
 
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 
 
 
@@ -183,8 +287,14 @@ ul {
   display: flex;
   flex-direction: row;
   max-width: calc(100vw - 80px);
-  overflow: hidden;
+  // max-width: 100vw;
+  // overflow: hidden;
   justify-content: flex-start;
+
+  .body-text {
+    max-width: 480px;
+    // width: 64vw;
+  }
 
   .levels {
     display: flex;
@@ -197,7 +307,9 @@ ul {
   }
 
   .full-height {
-    height: 100vh;
+    max-height: 100vh;
+    // height: calc(100vh - 80px);
+    // overflow: hidden;
   }
 
   .itemOne {
@@ -208,18 +320,22 @@ ul {
     // margin: 0px 0px 80px 0px;
 
     .itemTwo {
-      margin: 0px 0px 40px 0px;
+      margin: 0px 0px 120px 0px;
     }
   }
 
   .nav {
-    width: 15vw;
-    min-width: 320px;
+    // width: 64vw;
+    // min-width: 560px;
+    max-width: 100%;
+    // max-width: 80vw;
+
+    // border: 1px solid red;
 
     .top-sec {
       // flex: 1 1 0;
       // justify-content: flex-start;
-      margin: 0px 0px 80px 0px;
+      margin: 0px 0px 120px 0px;
     }
 
     .mid-sec {
@@ -256,6 +372,18 @@ ul {
       flex: 1 1 0;
       // margin-top: auto
       justify-content: flex-end;
+    }
+  }
+
+  .flexChunks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .chunk {
+      max-width: 480px;
+      width: 480px;
+      margin: 0px 80px 64px 0px;
     }
   }
 }
