@@ -341,6 +341,10 @@ h3 {
     .mid-sec {
       flex: 3 1 0;
       max-width: 1680px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       // justify-content: flex-start;
       // margin: 0px 0px 80px 0px;
     }
