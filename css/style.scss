@@ -340,6 +340,7 @@ h3 {
 
     .mid-sec {
       flex: 3 1 0;
+      max-width: 1680px;
       // justify-content: flex-start;
       // margin: 0px 0px 80px 0px;
     }
@@ -364,6 +365,7 @@ h3 {
 
     .mid-sec {
       flex: 3 1 0;
+      max-width: 1680px;
       // justify-content: flex-start;
       // margin: 0px 0px 80px 0px;
     }
@@ -388,28 +390,74 @@ h3 {
   }
 }
 
+@media (max-width: 800px) {
 
-// SPECIFIC CONTAINER CSS
+  .main-container {
 
-// #level-0 {
-//   // flex-grow: 1;
-//   // padding: 40px;
-//   background-color: #FFFFFF;
-//
-//   .top-sec {
-//
-//     h1 {
-//       // flex: 1 1 0;
-//     }
-//
-//     p {
-//       flex: 2 1 0;
-//     }
-//   }
-// }
+    .flexChunks {
+      // display: flex;
+      // flex-direction: row;
+      // flex-wrap: wrap;
 
-#level-1 {
-  // flex-grow: 1;
-  // width: 100%;
-  // background-color: #FAFBFF;
+      .chunk {
+        // max-width: 480px;
+        // width: 480px;
+        margin: 0px 0px 64px 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .main-container {
+    width: 100vw;
+    max-width: 100vw;
+
+    .levels {
+
+      padding: 24px;
+      width: calc(100vw - 48px);
+      max-height: calc(100vh - 48px);
+    }
+
+    .itemOne {
+
+      .itemTwo {
+        margin: 0px 0px 80px 0px;
+      }
+    }
+
+    .nav {
+
+      .top-sec {
+        // flex: 1 1 0;
+        // justify-content: flex-start;
+        margin: 0px 0px 80px 0px;
+      }
+
+      .mid-sec {
+        // max-width: 480px;
+        max-width: 100%;
+      }
+    }
+
+    .flexChunks {
+      // display: flex;
+      // flex-direction: row;
+      // flex-wrap: wrap;
+      max-width: 100%;
+
+      .chunk {
+        // max-width: 480px;
+        // width: 480px;
+        max-width: 100%;
+        margin: 0px 0px 48px 0px;
+      }
+    }
+  }
 }
