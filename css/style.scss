@@ -284,12 +284,12 @@ h3 {
 // GENERAL CONTAINER SIZING
 
 .main-container {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
   max-width: calc(100vw - 80px);
   // max-width: 100vw;
   // overflow: hidden;
-  justify-content: flex-start;
+  // justify-content: flex-start;
 
   .body-text {
     max-width: 480px;
@@ -297,10 +297,10 @@ h3 {
   }
 
   .levels {
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    justify-content: flex-start;
+    // display: flex;
+    // flex: none;
+    // flex-direction: column;
+    // justify-content: flex-start;
 
     padding: 40px;
     max-height: calc(100vh - 80px);
@@ -313,10 +313,10 @@ h3 {
   }
 
   .itemOne {
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    // justify-content: flex-start;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
     margin: 0px 0px 80px 0px;
 
     .itemTwo {
@@ -334,9 +334,9 @@ h3 {
     .mid-sec {
       max-width: 1680px;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: flex-start;
       margin: 0px 0px 80px 0px;
     }
   }
