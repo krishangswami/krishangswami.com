@@ -335,6 +335,7 @@ h3 {
     // justify-content: flex-start;
 
     padding: 40px;
+    width: calc(100% - 80px);
     // max-height: calc(100vh - 80px);
   }
 
@@ -430,8 +431,7 @@ h3 {
     .levels {
 
       padding: 24px;
-      width: calc(100vw - 48px);
-      width: 100%;
+      width: calc(100% - 48px);
     }
 
     .itemOne {
