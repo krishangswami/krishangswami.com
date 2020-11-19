@@ -50,9 +50,16 @@ canvas{
   margin: 0px 0px 0px 0px !important;
 }
 
-
+.fortyUpDown {
+  margin: 40px 0px 40px 0px !important;
+}
 
 // LINKS
+
+.desc-text {
+  // width: 100%;
+  color: #6B7A94;
+}
 
 .pageLink {
   // background-color: #EEFFD9;
@@ -60,7 +67,7 @@ canvas{
 
   .desc-text {
     width: 100%;
-    color: #6C7A93;
+    color: #6B7A94;
   }
 
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -68,7 +75,7 @@ canvas{
 
   .pageName {
     display: inline-block;
-    // border-bottom: 1px solid #DCDFE5;
+    // border-bottom: 1px solid #D4DDED;
     // color: #333B47;
 
     // padding-bottom: 1px;
@@ -98,7 +105,7 @@ canvas{
     img {
       max-width: 480px;
       width: 100%;
-
+      display: block;
 
       // max-height: 40vh;
       object-fit: contain;
@@ -113,8 +120,41 @@ canvas{
   }
 }
 
+.pageImageTwo {
+  // position: fixed;
+  // bottom: 40px;
+  // right: 40px;
+
+  width: 100%;
+  // width: 480px;
+  margin: 0px 0px 8px 0px;
+  // max-width: 480px;
+  // box-sizing: border-box;
+
+  // height: 0px;
+  // text-align: right;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+
+  img {
+    max-width: 480px;
+    width: 100%;
+
+
+    // max-height: 40vh;
+    object-fit: contain;
+
+    align-items: right;
+
+    box-shadow: 0px 16px 64px rgba(243, 245, 255, 0.4), 0px 8px 24px rgba(107, 122, 148, 0.08);
+
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+}
+
 .pageLink:hover {
-  // color: #6C7A93;
+  // color: #6B7A94;
   // background-color: #EEFFD9;
 
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -122,7 +162,7 @@ canvas{
 
   .pageName {
     // border-bottom: 1px solid #6BE0BF;
-    // border-bottom: 1px solid #DCDFE5;
+    // border-bottom: 1px solid #D4DDED;
     // padding-bottom: 1px;
 
     -webkit-transition: all 0s ease-in-out 0s;
@@ -149,30 +189,20 @@ canvas{
 }
 
 .link {
-  // border-bottom: 1px solid #6C7A93;
+  // border-bottom: 1px solid #6B7A94;
 
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-
-  span {
-    color: #6BE0BF;
-    opacity: 0;
-    display: none;
-
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
-  }
-
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
   // -webkit-transition: all 0.3s ease-in-out 0s;
   // transition: all 0.3s ease-in-out 0s;
 }
 
 .link:hover {
   // color: #738EA5;
-  color: #6C7A93;
+  color: #6B7A94;
 
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 
   // span {
   //   opacity: 1;
@@ -185,12 +215,13 @@ canvas{
 
 // LINK IN THE BODY COPY ITSELF
 .bodyLink {
-  // border-bottom: 1px solid #DCDFE5;
-  color: #333B47;
+  border-bottom: 1px solid #D4DDED;
+  // color: #333B47;
+  // color: #6B7A94;
 
   // #7FE0FF;
-  // padding-bottom: 2px;
-  // border-radius: 1px;
+  padding-bottom: 4px;
+  border-radius: 1px;
 
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
@@ -198,8 +229,9 @@ canvas{
 
 .bodyLink:hover {
   // color: #6BE0BF;
-  color: #6C7A93;
-  // border-bottom: 1px solid #DCDFE5;
+  color: #6B7A94;
+  // color: #A6B3C9;
+  // border-bottom: 1px solid #D4DDED;
   // padding-bottom: 2px;
 // color: #6BE0BF;
 
@@ -208,8 +240,18 @@ canvas{
 }
 
 .activePage {
-  // padding-bottom: 2px;
-  // border-bottom: 1px solid #DCDFE5;
+  // color: #A6B3C9 !important;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #CFF5A3;
+}
+
+.sect {
+  display: inline;
+
+  li {
+    display: inline;
+    margin: 0px 24px 0px 0px;
+  }
 }
 
 .tags {
@@ -255,15 +297,15 @@ canvas{
   height: 2px;
   // background-color: #9FCAEF;
   // background-color: #6BE0BF
-  background-color: #DCDFE5;
+  background-color: #D4DDED;
   // background-color: #ADB5C3;
-  // background-color: #6C7A93;
+  // background-color: #6B7A94;
   border-radius: 2px;
   // margin-top: 40px;
 }
 
 .gray {
-  color: #DCDFE5;
+  color: #D4DDED;
 }
 
 ul {
@@ -287,7 +329,7 @@ ul {
   }
 
   li::before {
-    color: #DCDFE5;
+    color: #D4DDED;
   }
 }
 
@@ -342,6 +384,10 @@ h3 {
 
     .itemTwo {
       margin: 0px 0px 120px 0px;
+
+      // .itemThree {
+      //   margin: 0px 0px 40px 0px;
+      // }
     }
   }
 
@@ -367,6 +413,8 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+
 
     margin: 0px 0px 120px 0px;
 
