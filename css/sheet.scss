@@ -19,12 +19,28 @@ body {
   margin: 0px 0px 0px 0px !important;
 }
 
+.activePage {
+  // color: #A6B3C9 !important;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #CFF5A3;
+}
+
+.sect {
+  display: inline;
+
+  li {
+    display: inline;
+    margin: 0px 24px 0px 0px;
+  }
+}
+
 .pageLink {
   // background-color: #EEFFD9;
   overflow: auto;
 
   .desc-text {
     width: 100%;
+    color: #6B7A94;
   }
 
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -32,11 +48,11 @@ body {
 
   .pageName {
     display: inline-block;
-    border-bottom: 1px solid #DCDFE5;
+    // border-bottom: 1px solid #D4DDED;
     // color: #333B47;
 
-    padding-bottom: 1px;
-    margin-bottom: 4px;
+    // padding-bottom: 1px;
+    // margin-bottom: 4px;
 
     -webkit-transition: all 0s ease-in-out 0s;
     transition: all 0s ease-in-out 0s;
@@ -68,37 +84,6 @@ body {
       box-shadow: 0px 16px 64px rgba(243, 245, 255, 0.4), 0px 8px 24px rgba(107, 122, 148, 0.08);
     }
   }
-
-  .pageImage {
-    display: none;
-    // position: fixed;
-    // bottom: 40px;
-    // right: 40px;
-    //
-    // // width: 640px;
-    //
-    // // height: 0px;
-    // text-align: right;
-    //
-    // visibility: hidden;
-    // opacity: 0;
-    // transition: visibility 0s, opacity 0.5s linear;
-    // z-index: 9;
-    //
-    // -webkit-transition: all 0.4s ease-in-out 0s;
-    // transition: all 0.4s ease-in-out 0s;
-    //
-    // img {
-    //   max-width: 640px;
-    //   max-height: 48vh;
-    //   object-fit: contain;
-    //
-    //   align-items: right;
-    //
-    //   box-shadow: 0px 16px 64px rgba(243, 245, 255, 0.4), 0px 8px 24px rgba(107, 122, 148, 0.08);
-    //
-    // }
-  }
 }
 
 .pageLink:hover {
@@ -110,25 +95,30 @@ body {
 
   .pageName {
     // border-bottom: 1px solid #6BE0BF;
-    border-bottom: 1px solid #DCDFE5;
-    padding-bottom: 1px;
+    // border-bottom: 1px solid #D4DDED;
+    // padding-bottom: 1px;
 
     -webkit-transition: all 0s ease-in-out 0s;
     transition: all 0s ease-in-out 0s;
 
   }
 
-  // .pageImage {
-  //   visibility: visible;
-  //   opacity: 1;
-  //
-  //   -webkit-transition: all 0.4s ease-in-out 0s;
-  //   transition: all 0.4s ease-in-out 0s;
-  //
-  //   img {
-  //
-  //   }
-  // }
+  .pageImageTwo {
+
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+
+    // border: 4px solid #EEFFD9;
+
+    img {
+      // box-shadow: none;
+
+      // box-shadow: 0px 4px 40px #EEFFD9, 0px 0px 16px rgba(146, 150, 247, 0.08);
+
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+    }
+  }
 }
 
 
