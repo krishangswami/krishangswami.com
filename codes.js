@@ -291,9 +291,9 @@ if (hasTouch()) { // remove all the :hover stylesheets
           this.sign = -this.sign,
           this.paint = !1,
           // o.fillStyle = this.metaFill,
-          o.fillStyle = '#F4F6FE',
-          // o.fillStyle = '#F6FFEB',
-          // o.fillStyle = '#EEFFD9',
+          // o.fillStyle = '#F4F6FE',
+          o.fillStyle = '#E5F9FF',
+          // o.fillStyle = '#FFEEC2',
           o.beginPath(),
           i = 0;
         (t = this.balls[i++]);
