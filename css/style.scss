@@ -13,9 +13,12 @@
 
 body {
   font-family: 'Inter', 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  // font-size: 16px;
   // font-size: 1.1rem;
-  line-height: 24px;
+  // line-height: 24px;
+
+  font-size: 1rem !important;
+  line-height: 1.4rem !important;
   width: 100vw;
   color: #333B47;
 
@@ -463,8 +466,8 @@ h3 {
   }
 
   body {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem !important;
+    line-height: 1.4rem !important;
   }
 
   .main-container {
