@@ -1,7 +1,7 @@
 body {
   font-family: 'Inter', 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem !important;
+  line-height: 1.4rem !important;
   color: #333B47;
 
   a {
@@ -579,7 +579,7 @@ body {
   .desc {
     overflow: scroll;
     width: 20vw;
-    min-width: 320px;
+    min-width: 400px;
 
     .top-sec {
       // flex: 1 1 0;
@@ -1065,7 +1065,7 @@ h3 {
 
     .desc {
       overflow: scroll;
-      min-width: 280px;
+      // min-width: 280px;
 
       .top-sec {
         margin: 0px 0px 80px 0px;
@@ -1134,7 +1134,7 @@ h3 {
     #menu-icon {
       position: fixed;
       // z-index: 13;
-      margin-top: 34px;
+      // margin-top: 24px;
 
       cursor: pointer;
       -webkit-transition: background-color 0.4s ease-in-out 0s;
@@ -1169,7 +1169,7 @@ h3 {
   .main-container {
 
     .levels {
-      padding: 24px;
+      // padding: 24px;
       max-height: calc(100vh - 48px);
     }
 
@@ -1186,7 +1186,7 @@ h3 {
 
     .desc {
       overflow: scroll;
-      min-width: 280px;
+      // min-width: 280px;
 
       .top-sec {
         margin: 0px 0px 80px 0px;
@@ -1240,12 +1240,12 @@ h3 {
   }
 }
 
-.staticrypt-page {
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
-    box-sizing: border-box;
-}
+// .staticrypt-page {
+//     width: 360px;
+//     padding: 8% 0 0;
+//     margin: auto;
+//     box-sizing: border-box;
+// }
 
 .staticrypt-form {
     position: relative;
@@ -1253,8 +1253,10 @@ h3 {
     background: #FFFFFF;
     border: 1px solid #E9EEF6;
     // max-width: 360px;
-    width: 48%;
-    max-width: 560px;
+    // width: 48%;
+    // max-width: 560px;
+    // min-width: 520px;
+    width: 560px;
     margin: 0 auto;
 
     // text-align: center;
@@ -1276,11 +1278,14 @@ h3 {
 
     .error {
       display: none;
-      line-height: 24px;
-      font-size: 16px;
+      // line-height: 24px;
+      // font-size: 16px;
+      font-size: 1rem !important;
+      line-height: 1.4rem !important;
       color: #DE6969;
       margin: 8px 0px 0px 40px;
     }
+
 }
 
 #staticrypt-password {
@@ -1295,9 +1300,9 @@ h3 {
     box-sizing: border-box;
 
     font-family: 'Inter', 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 16px;
+
+    font-size: 1rem !important;
+    line-height: 1.4rem !important;
     color: #333B47;
 
     //
@@ -1319,10 +1324,40 @@ h3 {
     margin: 0px 40px 8px 40px;
     // width: 100%;
     border: 0;
-    padding: 24px;
+    // padding: 24px;
     // color: #FFFFFF;
-    font-size: 16px;
+    // font-size: 16px;
+
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 169px;
+    right: 18px;
+
+    border-radius: 40px;
+
+    background-image: url("../files/icons/arrow-right-gray.svg");
+    background-size: 56% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
     cursor: pointer;
+
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .button:hover {
+    background: #FBFFF6;
+
+    background-image: url("../files/icons/arrow-right.svg");
+    background-size: 56% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
   }
 }
 
@@ -1341,10 +1376,10 @@ h3 {
 //     cursor: pointer;
 // }
 
-.staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
-    background: #43A047;
-    padding: 40px;
-}
+// .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
+//     background: #43A047;
+//     padding: 40px;
+// }
 
 .staticrypt-html {
     height: 100%;
@@ -1368,8 +1403,4 @@ h3 {
   // padding: 40px;
     // margin-top: -1em;
     // margin-bottom: 1em;
-}
-
-.staticrypt-title {
-    font-size: 1.5em;
 }
