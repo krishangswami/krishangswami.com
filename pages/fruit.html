@@ -8,19 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/sheet.min.css" media="screen" title="no title" charset="utf-8">
-    <!-- <link rel="stylesheet" href="../css/about.min.css" media="screen" title="no title" charset="utf-8"> -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="shortcut icon" href="../files/favicon.ico">
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../code.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="hidden-nav">
       <div class="nav">
-        <!-- <div class="itemTwo flexChunks">
-            <a href="../index.html" class="link">Krishang Swami</a>
-        </div> -->
-
         <div class="itemTwo flexChunks">
           <div class="chunk">
             <a href="../index.html" class="link">Krishang Swami</a>
@@ -163,13 +160,13 @@
 
         <div id="space" class="itemTwo"></div>
       </div>
-      <div class="" id="level-div"></div>
+      <div class="" id="nav-div"></div>
       <div class="close-nav">
         <div id="menu-icon">
           <div class="icon s-square-x"></div>
         </div>
       </div>
-      <div class="" id="level-div"></div>
+      <div class="" id="nav-div"></div>
     </div>
 
     <div class="blur-back"></div>
@@ -179,116 +176,100 @@
       <div class="closed-nav">
         <div id="menu-icon">
           <div class="icon s-menu"></div>
-            <!-- <div class="icons icon-one"></div> -->
-            <!-- <div class="icons icon-two"></div> -->
         </div>
       </div>
 
       <div class="" id="level-div"></div>
 
-      <div class="levels full-height desc" id="level-1">
-        <div class="top-sec itemOne">
-          <h1>
-            Public Fruit
-          </h1>
-        </div>
-        <div class="mid-sec itemOne">
-          <div class="itemTwo">
-            Product Design, Digital Commons
-            <p class="desc-text">
+      <div class="content-section">
+
+        <div class="levels desc" id="">
+          <div class="top-sec itemOne">
+            <h1>
+              Public Fruit
+            </h1>
+          </div>
+          <div class="mid-sec itemOne">
+            <div class="itemTwo desc-text">
+              Product Design, Digital Commons
+              <br>
               2020 • In Progress
-            </p>
+            </div>
+            <div id="divider" class="itemTwo"></div>
+            <div class="itemTwo body-text lastItem">
+              This project is an attempt to create a peer-to-peer network of privately owned books.
+              <br><br>
+              The product would be an index of the books shared by members and made available for order and reading.
+            </div>
+            <!-- <div id="divider" class="itemTwo"></div> -->
           </div>
-          <div id="divider" class="itemTwo"></div>
-          <div class="itemTwo">
-            This project is an attempt to create a digital commons of personal books.
-            <br><br>
-            The product would be an index of the books shared by members and made available for order and reading.
+        </div>
+
+        <div class="" id="hoz-div"></div>
+
+        <div class="levels conts" id="">
+          <div class="mid-sec itemOne">
+            <div class="itemTwo body-text">
+              <!-- The design challenge is only in part to concetualize a product.  -->
+              <!-- I've recently picked up a curiosity towards exploring patterns, systems and languages. So,  -->
+              <!-- The design challenge here is only in part to conceptualize a product, the other is an exploration of a simple new narrative on ownership and access to books. -->
+
+              The idea is to create a digital commons for sharing literature members find valuable for free.
+              <!-- This project is also closely linked to <a href="../pages/engram.html" class="bodyLink">Engram</a>, as it  -->
+            </div>
+            <div class="itemTwo">
+              <img class="image" src="../files/fruit/main.png" alt="">
+            </div>
+            <div class="itemTwo">
+              <p class="body-text">
+                This concept is primarily inspired by all the books I've received from friends who've extended their private libraries to share books they don't need anymore.
+                <br><br>
+                Either through local meetups or the magic of USPS media mail, members can request books based on a currency/barter system.
+              </p>
+            </div>
+            <div class="main-carousel noSpace" data-flickity='{ "freeScroll": "true", "cellAlign": "left", "imagesLoaded": "true", "pageDots": "false"}'>
+                <!-- <img class="carousel-image" src="../files/fruit/sign-1.png" alt=""> -->
+                <img class="carousel-image" src="../files/fruit/sign-2.png" alt="">
+                <img class="carousel-image" src="../files/fruit/onboard.png" alt="">
+                <img class="carousel-image" src="../files/fruit/book.png" alt="">
+                <img class="carousel-image" src="../files/fruit/book-info.png" alt="">
+                <img class="carousel-image" src="../files/fruit/get-book.png" alt="">
+            </div>
+            <div class="itemTwo">
+              <!-- <p class="body-text">
+                This version is designed only to be an MVP in which the website is static and any dynamic functionality like book status, member info and ordering books is handled manually.
+              </p> -->
+            </div>
+            <!-- <div id="divider" class="itemTwo"></div> -->
+            <div id="divider" class="itemTwo"></div>
+            <div class="itemTwo">
+              <p class="body-text">
+                At its best, this is an attempt to create a slightly more complex digital iteration of the free
+                <a href="https://littlefreelibrary.org/" class="bodyLink" target="_blank">neighborhood library boxes</a>.
+              </p>
+            </div>
+            <div class="itemTwo">
+              <img class="image half-image" src="../files/fruit/little-free-library.jpg" alt="">
+            </div>
+            <!-- <div class="itemTwo">
+              <div class="tables table-2">
+                <div class= "flex-row">
+                  <div class="col col-l">
+                    <img class="image" src="../files/hear/pub-5.jpg" alt="">
+                    <img class="image" src="../files/fruit/little-free-library.jpg" alt="">
+                  </div>
+                  <div class="col col-r">
+                    <img class="image" src="../files/fruit/little-free-library.jpg" alt="">
+                    <img class="image" src="../files/hear/pub-1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <div id="space" class="itemTwo"></div>
           </div>
-          <div id="divider" class="itemTwo"></div>
-          <div class="itemTwo">
-            <!-- The design challenge is only in part to concetualize a product.  -->
-            <!-- I've recently picked up a curiosity towards exploring patterns, systems and languages. So,  -->
-            The design challenge here is only in part to conceptualize a product, the other is an exploration of a simple new narrative on ownership and access to books.
-            <br><br>
-            <!-- This project is also closely linked to <a href="../pages/engram.html" class="bodyLink">Engram</a>, as it  -->
-          </div>
-          <!-- <div id="divider" class="itemTwo"></div>
-          <div class="itemTwo">
-            This project is also closely linked to another conceptual project
-          </div> -->
         </div>
 
       </div>
-
-      <div class="" id="level-div"></div>
-
-      <div class="levels full-height conts" id="level-2">
-        <div class="top-sec itemOne">
-          /
-        </div>
-        <div class="mid-sec itemOne">
-          <div class="itemTwo">
-            <img class="image shadowed" src="../files/fruit/main.png" alt="">
-          </div>
-          <div class="itemTwo">
-            <p class="body-text">
-              This concept is primarily inspired by all the books I've received from friends who've extended their private libraries to share books they don't need anymore.
-              <br><br>
-              Either through local meetups or the magic of USPS media mail, members can request books based on a currency/barter system.
-              <br><br>
-              All the books are 'free' but a persons access would be based on their contribution of books.
-            </p>
-          </div>
-          <div class="itemTwo">
-            <img class="image shadowed" src="../files/fruit/book.png" alt="">
-          </div>
-          <div class="itemTwo">
-            <!-- <p class="body-text">
-              This version is designed only to be an MVP in which the website is static and any dynamic functionality like book status, member info and ordering books is handled manually.
-            </p> -->
-          </div>
-          <div class="itemTwo">
-            <div class="tables table-2">
-              <div class= "flex-row">
-                <div class="col col-l">
-                  <!-- <img class="image" src="../files/hear/pub-5.jpg" alt=""> -->
-                  <img class="image shadowed" src="../files/fruit/book-info.png" alt="">
-
-                </div>
-                <div class="col col-r">
-                  <img class="image shadowed" src="../files/fruit/get-book.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div id="divider" class="itemTwo"></div> -->
-          <div class="itemTwo">
-            <p class="body-text">
-              At its best, this is an attempt to create a slightly more complex digital iteration of the free
-              <a href="https://littlefreelibrary.org/" class="bodyLink" target="_blank">neighborhood library boxes</a>.
-            </p>
-          </div>
-          <div class="itemTwo">
-            <div class="tables table-2">
-              <div class= "flex-row">
-                <div class="col col-l">
-                  <!-- <img class="image" src="../files/hear/pub-5.jpg" alt=""> -->
-                  <img class="image" src="../files/fruit/little-free-library.jpg" alt="">
-                </div>
-                <div class="col col-r">
-                  <!-- <img class="image" src="../files/fruit/little-free-library.jpg" alt=""> -->
-                  <!-- <img class="image" src="../files/hear/pub-1.jpg" alt=""> -->
-                </div>
-              </div>
-            </div>
-            <!-- red -->
-          </div>
-          <div id="space" class="itemTwo"></div>
-        </div>
-      </div>
-
-
     </div>
 
   </body>

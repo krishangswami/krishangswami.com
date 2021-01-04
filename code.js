@@ -20,6 +20,11 @@ document.addEventListener('play', function(e){
 
 $(document).ready(function(){
 
+  $('#staticrypt-password').on('input', function() {
+
+    $('.staticrypt-decrypt-button').css('background-image', 'url("../files/icons/arrow-right.svg")');
+  });
+
   // var nodes = $('.not-nav');
   // $('.not-nav').on('click', function (evt) {
   //     $('.nav').classList.add('removed');
