@@ -1099,6 +1099,7 @@ h3 {
 }
 
 .staticrypt-form {
+  position: relative;
 
   .break {
     width: 100%;
@@ -1122,8 +1123,8 @@ h3 {
     height: 40px;
 
     position: absolute;
-    top: 169px;
-    right: 18px;
+    bottom: 31px;
+    right: 0px;
 
     border-radius: 40px;
 
