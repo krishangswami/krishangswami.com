@@ -8,19 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/sheet.min.css" media="screen" title="no title" charset="utf-8">
-    <!-- <link rel="stylesheet" href="../css/about.min.css" media="screen" title="no title" charset="utf-8"> -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="shortcut icon" href="../files/favicon.ico">
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../code.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="hidden-nav">
       <div class="nav">
-        <!-- <div class="itemTwo flexChunks">
-            <a href="../index.html" class="link">Krishang Swami</a>
-        </div> -->
-
         <div class="itemTwo flexChunks">
           <div class="chunk">
             <a href="../index.html" class="link">Krishang Swami</a>
@@ -163,13 +160,13 @@
 
         <div id="space" class="itemTwo"></div>
       </div>
-      <div class="" id="level-div"></div>
+      <div class="" id="nav-div"></div>
       <div class="close-nav">
         <div id="menu-icon">
           <div class="icon s-square-x"></div>
         </div>
       </div>
-      <div class="" id="level-div"></div>
+      <div class="" id="nav-div"></div>
     </div>
 
     <div class="blur-back"></div>
@@ -184,107 +181,115 @@
       </div>
 
       <div class="" id="level-div"></div>
-      <!-- Second Section -->
-      <div class="levels full-height desc" id="level-1">
-        <div class="top-sec itemOne">
-          <h1>
-            Playfare
-          </h1>
-        </div>
-        <div class="mid-sec itemOne">
-          <div class="itemTwo">
-            Data Visualization, Website
-            <p class="desc-text">
+
+      <div class="content-section">
+
+        <div class="levels desc" id="">
+          <div class="top-sec itemOne">
+            <h1>
+              Playfare
+            </h1>
+          </div>
+          <div class="mid-sec itemOne">
+            <div class="itemTwo desc-text">
+              Data Visualization, Website
+              <br>
               2017
-            </p>
+            </div>
+            <div id="divider" class="itemTwo"></div>
+            <div class="itemTwo body-text lastItem">
+              The goal of this odd project was to create an interactive experience visualizing data from different sources.
+              <br><br>
+              While ideating on the project I came across this <a class="bodyLink" target="_blank" href="pages/playfare-world/index.html">report</a> which states that on average a person in America spends over 10 hours each day behind a screen. To somewhat criticize this consumption Playfare aims to demonstrate the 'fare for playing' on the internet by gathering data from multiple sources and then juxtaposing it on a website.
+            </div>
+
           </div>
-          <div id="divider" class="itemTwo"></div>
-          <div class="itemTwo">
-            The goal of this odd project was to create an interactive experience visualizing data from different sources.<br><br>
-            While ideating on the project I came across this <a class="bodyLink" target="_blank" href="pages/playfare-world/index.html">report</a> which states that on average a person in America spends over 10 hours each day behind a screen. To somewhat criticize this consumption Playfare aims to demonstrate the 'fare for playing' on the internet by gathering data from multiple sources and then juxtaposing it on a website. <br><br>
-            The visualization shows change happening to certain factors while viewers are simply on the website. The statistics shown constantly aggregate from when the page is loaded. <br><br>
-            The project is live <a class="bodyLink" target="_blank" href="../pages/playfare-world/index.html">here</a>.
-          </div>
-          <div id="divider" class="itemTwo"></div>
-          <div class="itemTwo customList">
-            <!-- Sources and other links:<br> -->
-            <div class="list">
-              <div class="icon s-link i-bullet"></div>
-              <div class="">
-                <a class="bodyLink" target="_blank" href="https://www.nielsen.com/us/en/insights/report/2016/the-total-audience-report-q1-2016/">Nielson (2016)</a><br> The Total Audience Report
-              </div>
-            </div>
-
-            <div class="list">
-              <div class="icon s-link i-bullet"></div>
-              <div class="">
-                <a class="bodyLink" target="_blank" href="https://climate.nasa.gov/vital-signs/sea-level/">Nasa (2020)</a><br>Vital Signs of the Planet: Sea Level
-              </div>
-            </div>
-
-            <div class="list">
-              <div class="icon s-link i-bullet"></div>
-              <div class="">
-                <a class="bodyLink" target="_blank" href="https://climate.nasa.gov/evidence/">Nasa (2020)</a><br>Vital Signs of the Planet: Evidence
-              </div>
-            </div>
-
-            <div class="list">
-              <div class="icon s-link i-bullet"></div>
-              <div class="">
-                <a class="bodyLink" target="_blank" href="https://time.com/4019277/trees-humans-deforestation/">TIME (2015)</a><br> Here's How Many Trees Humans Cut Down Each Year
-              </div>
-            </div>
-
-            <div class="list">
-              <div class="icon s-link i-bullet"></div>
-              <div class="">
-                <a class="bodyLink" target="_blank" href="https://www.nature.com/articles/nature14967.epdf?referrer_access_token=q6H9VR35tFbRRPls-we8b9RgN0jAjWel9jnR3ZoTv0PkYJmQ6VQcpxIB4Tt0SaQy_TViN9dLBJXbXpFkkWGX7RsUA_8a8_uEeuFNil0kTIiDDSPq7px4H3IiRCoW6JEZfZ2TCGutz3VPgv3j19khbnCVGVzdK87GiFRSkvsQCs-9S6cA2TEGNiCwj1Dg9_0F9eCtP80oB9OrymZmFzrmNg%3D%3D&tracking_referrer=time.com/">Nature (2015)</a><br>Mapping tree density at a global scale
-              </div>
-            </div>
-
-            <div class="list">
-              <div class="icon s-link i-bullet"></div>
-              <div class="">
-                <a class="bodyLink" target="_blank" href="https://www.worldwildlife.org/threats/deforestation-and-forest-degradation">World Wide Life (2015)</a><br>Deforestation and Forest Degradation
-              </div>
-            </div>
-
-            <div class="list">
-              <div class="icon s-link i-bullet"></div>
-              <div class="">
-                <a class="bodyLink" target="_blank" href="https://www.internetlivestats.com/one-second/#instagram-band">Internet Live Stats</a>
-              </div>
-            </div>
-            <!-- <span class="gray">↗</span> -->
-          </div>
-          <div id="space" class="itemTwo"></div>
         </div>
-      </div>
 
-      <div class="" id="level-div"></div>
+        <div class="" id="hoz-div"></div>
 
-      <div class="levels full-height conts" id="level-2">
-        <div class="top-sec itemOne">
-          /
+        <div class="levels conts" id="">
+          <div class="mid-sec itemOne">
+
+            <div class="itemTwo">
+              <div class="body-text">
+                The visualization shows change happening to certain factors while viewers are simply on the website. The statistics shown constantly aggregate from when the page is loaded.
+                <br><br>
+                The project is live <a class="bodyLink" target="_blank" href="../pages/playfare-world/index.html">here</a>.
+              </div>
+              <br>
+              <div class="main-carousel noSpace" data-flickity='{ "freeScroll": "true", "cellAlign": "left", "imagesLoaded": "true", "pageDots": "false"}'>
+                <!-- "contain": "true", "prevNextButtons": "false", "pageDots": "false", "imagesLoaded": "true", "setGallerySize": "false"-->
+                <img class="carousel-image" src="../files/playfare/sketch-1.png" alt="">
+                <img class="carousel-image" src="../files/playfare/sketch-2.png" alt="">
+                <img class="carousel-image" src="../files/playfare/sketch-3.png" alt="">
+                <img class="carousel-image" src="../files/playfare/sketch-4.png" alt="">
+              </div>
+            </div>
+
+            <div id="divider" class="itemTwo"></div>
+            <div class="itemTwo">
+              <a class="" target="_blank" href="../pages/playfare-world/index.html">
+                <img class="image" src="../files/playfare/playfare-main.png" alt="">
+              </a>
+            </div>
+
+            <div id="divider" class="itemTwo"></div>
+            <div class="itemTwo customList">
+              <!-- Sources and other links:<br> -->
+              <div class="list">
+                <div class="icon s-link i-bullet"></div>
+                <div class="">
+                  <a class="bodyLink" target="_blank" href="https://www.nielsen.com/us/en/insights/report/2016/the-total-audience-report-q1-2016/">Nielson (2016)</a><br> The Total Audience Report
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="icon s-link i-bullet"></div>
+                <div class="">
+                  <a class="bodyLink" target="_blank" href="https://climate.nasa.gov/vital-signs/sea-level/">Nasa (2020)</a><br>Vital Signs of the Planet: Sea Level
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="icon s-link i-bullet"></div>
+                <div class="">
+                  <a class="bodyLink" target="_blank" href="https://climate.nasa.gov/evidence/">Nasa (2020)</a><br>Vital Signs of the Planet: Evidence
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="icon s-link i-bullet"></div>
+                <div class="">
+                  <a class="bodyLink" target="_blank" href="https://time.com/4019277/trees-humans-deforestation/">TIME (2015)</a><br> Here's How Many Trees Humans Cut Down Each Year
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="icon s-link i-bullet"></div>
+                <div class="">
+                  <a class="bodyLink" target="_blank" href="https://www.nature.com/articles/nature14967.epdf?referrer_access_token=q6H9VR35tFbRRPls-we8b9RgN0jAjWel9jnR3ZoTv0PkYJmQ6VQcpxIB4Tt0SaQy_TViN9dLBJXbXpFkkWGX7RsUA_8a8_uEeuFNil0kTIiDDSPq7px4H3IiRCoW6JEZfZ2TCGutz3VPgv3j19khbnCVGVzdK87GiFRSkvsQCs-9S6cA2TEGNiCwj1Dg9_0F9eCtP80oB9OrymZmFzrmNg%3D%3D&tracking_referrer=time.com/">Nature (2015)</a><br>Mapping tree density at a global scale
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="icon s-link i-bullet"></div>
+                <div class="">
+                  <a class="bodyLink" target="_blank" href="https://www.worldwildlife.org/threats/deforestation-and-forest-degradation">World Wide Life (2015)</a><br>Deforestation and Forest Degradation
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="icon s-link i-bullet"></div>
+                <div class="">
+                  <a class="bodyLink" target="_blank" href="https://www.internetlivestats.com/one-second/#instagram-band">Internet Live Stats</a>
+                </div>
+              </div>
+              <!-- <span class="gray">↗</span> -->
+            </div>
+          </div>
         </div>
-        <div class="mid-sec itemOne">
-          <div class="itemTwo">
-            <img class="head-img" src="../files/playfare/playfare-wireframe.png" alt="">
-          </div>
-          <div class="itemTwo">
-            <img class="head-img" src="../files/playfare/playfare-wireframe-2.png" alt="">
-          </div>
-          <div id="divider" class="itemTwo"></div>
-          <div class="itemTwo">
-            <a class="" target="_blank" href="../pages/playfare-world/index.html">
-              <img class="head-img" src="../files/playfare/playfare-main.png" alt="">
-            </a>
-          </div>
-          <div id="space" class="itemTwo"></div>
-            <!-- <span class="gray">↗</span> -->
-          </ul>
-        </div>
+
       </div>
     </div>
   </body>
