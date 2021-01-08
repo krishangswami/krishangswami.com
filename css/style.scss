@@ -59,6 +59,10 @@ canvas{
   margin: 40px 0px 40px 0px !important;
 }
 
+.lh-spacing {
+  line-height: 1.8rem !important;
+}
+
 // LINKS
 
 .desc-text {
@@ -226,7 +230,7 @@ canvas{
   // color: #6B7A94;
 
   // #7FE0FF;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   border-radius: 1px;
 
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -247,7 +251,7 @@ canvas{
 
 .activePage {
   // color: #A6B3C9 !important;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   // border-bottom: 1px solid #CFF5A3;
   border-bottom: 1px solid #D4DDED;
 }
@@ -429,7 +433,7 @@ h3 {
       max-width: 480px;
       // width: 480px;
       width: 24vw;
-      min-width: 280px;
+      min-width: 360px;
       margin: 0px 80px 120px 0px;
     }
   }
